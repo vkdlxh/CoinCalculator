@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
+		DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */; };
+		DA9EF02E2021ABC90068E900 /* litecoin_png.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0252021ABC80068E900 /* litecoin_png.png */; };
+		DA9EF02F2021ABC90068E900 /* etherum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0262021ABC90068E900 /* etherum_logo.png */; };
+		DA9EF0302021ABC90068E900 /* ripple_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0272021ABC90068E900 /* ripple_logo.png */; };
+		DA9EF0312021ABC90068E900 /* zcash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0282021ABC90068E900 /* zcash_logo.png */; };
+		DA9EF0322021ABC90068E900 /* dash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0292021ABC90068E900 /* dash_logo.png */; };
+		DA9EF0332021ABC90068E900 /* Qtum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02A2021ABC90068E900 /* Qtum_logo.png */; };
+		DA9EF0342021ABC90068E900 /* bitcoin-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */; };
+		DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EF0362021B5740068E900 /* CoinListCell.swift */; };
 		DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3C20219D420061FCE0 /* AppDelegate.swift */; };
 		DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3E20219D430061FCE0 /* MainViewController.swift */; };
 		DAA13C4220219D430061FCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C4020219D430061FCE0 /* Main.storyboard */; };
@@ -34,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
+		DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_cash_logo.png; sourceTree = "<group>"; };
+		DA9EF0252021ABC80068E900 /* litecoin_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin_png.png; sourceTree = "<group>"; };
+		DA9EF0262021ABC90068E900 /* etherum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = etherum_logo.png; sourceTree = "<group>"; };
+		DA9EF0272021ABC90068E900 /* ripple_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ripple_logo.png; sourceTree = "<group>"; };
+		DA9EF0282021ABC90068E900 /* zcash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zcash_logo.png; sourceTree = "<group>"; };
+		DA9EF0292021ABC90068E900 /* dash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash_logo.png; sourceTree = "<group>"; };
+		DA9EF02A2021ABC90068E900 /* Qtum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Qtum_logo.png; sourceTree = "<group>"; };
+		DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-logo.png"; sourceTree = "<group>"; };
+		DA9EF0362021B5740068E900 /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
 		DAA13C3920219D420061FCE0 /* CoinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA13C3C20219D420061FCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA13C3E20219D430061FCE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +94,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA9EF0222021ABA80068E900 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */,
+				DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */,
+				DA9EF0292021ABC90068E900 /* dash_logo.png */,
+				DA9EF0262021ABC90068E900 /* etherum_logo.png */,
+				DA9EF0252021ABC80068E900 /* litecoin_png.png */,
+				DA9EF0232021ABC80068E900 /* monero_logo.png */,
+				DA9EF02A2021ABC90068E900 /* Qtum_logo.png */,
+				DA9EF0272021ABC90068E900 /* ripple_logo.png */,
+				DA9EF0282021ABC90068E900 /* zcash_logo.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DA9EF0352021AC0B0068E900 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DAA13C3020219D420061FCE0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +140,8 @@
 		DAA13C3B20219D420061FCE0 /* CoinCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DAA13C4820219D430061FCE0 /* Info.plist */,
+				DA9EF0352021AC0B0068E900 /* Model */,
 				DAA13C6C20219E540061FCE0 /* Controller */,
 				DAA13C6B20219E490061FCE0 /* StoryBoard */,
 				DAA13C6A20219DC00061FCE0 /* Supporting Files */,
@@ -125,10 +170,10 @@
 		DAA13C6A20219DC00061FCE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA9EF0222021ABA80068E900 /* images */,
 				DAA13C3C20219D420061FCE0 /* AppDelegate.swift */,
 				DAA13C4320219D430061FCE0 /* Assets.xcassets */,
 				DAA13C4520219D430061FCE0 /* LaunchScreen.storyboard */,
-				DAA13C4820219D430061FCE0 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -145,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
+				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,9 +302,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9EF0312021ABC90068E900 /* zcash_logo.png in Resources */,
 				DAA13C4720219D430061FCE0 /* LaunchScreen.storyboard in Resources */,
 				DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */,
+				DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */,
+				DA9EF0322021ABC90068E900 /* dash_logo.png in Resources */,
+				DA9EF0342021ABC90068E900 /* bitcoin-logo.png in Resources */,
+				DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */,
+				DA9EF02E2021ABC90068E900 /* litecoin_png.png in Resources */,
 				DAA13C4220219D430061FCE0 /* Main.storyboard in Resources */,
+				DA9EF0332021ABC90068E900 /* Qtum_logo.png in Resources */,
+				DA9EF0302021ABC90068E900 /* ripple_logo.png in Resources */,
+				DA9EF02F2021ABC90068E900 /* etherum_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */,
+				DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */,
 				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
