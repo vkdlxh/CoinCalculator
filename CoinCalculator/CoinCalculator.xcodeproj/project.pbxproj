@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3C20219D420061FCE0 /* AppDelegate.swift */; };
+		DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3E20219D430061FCE0 /* MainViewController.swift */; };
+		DAA13C4220219D430061FCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C4020219D430061FCE0 /* Main.storyboard */; };
+		DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C4320219D430061FCE0 /* Assets.xcassets */; };
+		DAA13C4720219D430061FCE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C4520219D430061FCE0 /* LaunchScreen.storyboard */; };
+		DAA13C5220219D430061FCE0 /* CoinCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5120219D430061FCE0 /* CoinCalculatorTests.swift */; };
+		DAA13C5D20219D430061FCE0 /* CoinCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA13C4E20219D430061FCE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA13C3120219D420061FCE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA13C3820219D420061FCE0;
+			remoteInfo = CoinCalculator;
+		};
+		DAA13C5920219D430061FCE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA13C3120219D420061FCE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA13C3820219D420061FCE0;
+			remoteInfo = CoinCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAA13C3920219D420061FCE0 /* CoinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA13C3C20219D420061FCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAA13C3E20219D430061FCE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DAA13C4120219D430061FCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAA13C4320219D430061FCE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAA13C4620219D430061FCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAA13C4820219D430061FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA13C4D20219D430061FCE0 /* CoinCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA13C5120219D430061FCE0 /* CoinCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCalculatorTests.swift; sourceTree = "<group>"; };
+		DAA13C5320219D430061FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA13C5820219D430061FCE0 /* CoinCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCalculatorUITests.swift; sourceTree = "<group>"; };
+		DAA13C5E20219D430061FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA13C3620219D420061FCE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA13C4A20219D430061FCE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA13C5520219D430061FCE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA13C3020219D420061FCE0 = {
+			isa = PBXGroup;
+			children = (
+				DAA13C3B20219D420061FCE0 /* CoinCalculator */,
+				DAA13C5020219D430061FCE0 /* CoinCalculatorTests */,
+				DAA13C5B20219D430061FCE0 /* CoinCalculatorUITests */,
+				DAA13C3A20219D420061FCE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA13C3A20219D420061FCE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C3920219D420061FCE0 /* CoinCalculator.app */,
+				DAA13C4D20219D430061FCE0 /* CoinCalculatorTests.xctest */,
+				DAA13C5820219D430061FCE0 /* CoinCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA13C3B20219D420061FCE0 /* CoinCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C6C20219E540061FCE0 /* Controller */,
+				DAA13C6B20219E490061FCE0 /* StoryBoard */,
+				DAA13C6A20219DC00061FCE0 /* Supporting Files */,
+			);
+			path = CoinCalculator;
+			sourceTree = "<group>";
+		};
+		DAA13C5020219D430061FCE0 /* CoinCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C5120219D430061FCE0 /* CoinCalculatorTests.swift */,
+				DAA13C5320219D430061FCE0 /* Info.plist */,
+			);
+			path = CoinCalculatorTests;
+			sourceTree = "<group>";
+		};
+		DAA13C5B20219D430061FCE0 /* CoinCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */,
+				DAA13C5E20219D430061FCE0 /* Info.plist */,
+			);
+			path = CoinCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		DAA13C6A20219DC00061FCE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C3C20219D420061FCE0 /* AppDelegate.swift */,
+				DAA13C4320219D430061FCE0 /* Assets.xcassets */,
+				DAA13C4520219D430061FCE0 /* LaunchScreen.storyboard */,
+				DAA13C4820219D430061FCE0 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAA13C6B20219E490061FCE0 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C4020219D430061FCE0 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		DAA13C6C20219E540061FCE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA13C3820219D420061FCE0 /* CoinCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA13C6120219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculator" */;
+			buildPhases = (
+				DAA13C3520219D420061FCE0 /* Sources */,
+				DAA13C3620219D420061FCE0 /* Frameworks */,
+				DAA13C3720219D420061FCE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinCalculator;
+			productName = CoinCalculator;
+			productReference = DAA13C3920219D420061FCE0 /* CoinCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAA13C4C20219D430061FCE0 /* CoinCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA13C6420219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculatorTests" */;
+			buildPhases = (
+				DAA13C4920219D430061FCE0 /* Sources */,
+				DAA13C4A20219D430061FCE0 /* Frameworks */,
+				DAA13C4B20219D430061FCE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA13C4F20219D430061FCE0 /* PBXTargetDependency */,
+			);
+			name = CoinCalculatorTests;
+			productName = CoinCalculatorTests;
+			productReference = DAA13C4D20219D430061FCE0 /* CoinCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAA13C5720219D430061FCE0 /* CoinCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA13C6720219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculatorUITests" */;
+			buildPhases = (
+				DAA13C5420219D430061FCE0 /* Sources */,
+				DAA13C5520219D430061FCE0 /* Frameworks */,
+				DAA13C5620219D430061FCE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA13C5A20219D430061FCE0 /* PBXTargetDependency */,
+			);
+			name = CoinCalculatorUITests;
+			productName = CoinCalculatorUITests;
+			productReference = DAA13C5820219D430061FCE0 /* CoinCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA13C3120219D420061FCE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "archive-asia";
+				TargetAttributes = {
+					DAA13C3820219D420061FCE0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DAA13C4C20219D430061FCE0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAA13C3820219D420061FCE0;
+					};
+					DAA13C5720219D430061FCE0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAA13C3820219D420061FCE0;
+					};
+				};
+			};
+			buildConfigurationList = DAA13C3420219D420061FCE0 /* Build configuration list for PBXProject "CoinCalculator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAA13C3020219D420061FCE0;
+			productRefGroup = DAA13C3A20219D420061FCE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA13C3820219D420061FCE0 /* CoinCalculator */,
+				DAA13C4C20219D430061FCE0 /* CoinCalculatorTests */,
+				DAA13C5720219D430061FCE0 /* CoinCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA13C3720219D420061FCE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA13C4720219D430061FCE0 /* LaunchScreen.storyboard in Resources */,
+				DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */,
+				DAA13C4220219D430061FCE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA13C4B20219D430061FCE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA13C5620219D430061FCE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA13C3520219D420061FCE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */,
+				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA13C4920219D430061FCE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA13C5220219D430061FCE0 /* CoinCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA13C5420219D430061FCE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA13C5D20219D430061FCE0 /* CoinCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAA13C4F20219D430061FCE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA13C3820219D420061FCE0 /* CoinCalculator */;
+			targetProxy = DAA13C4E20219D430061FCE0 /* PBXContainerItemProxy */;
+		};
+		DAA13C5A20219D430061FCE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA13C3820219D420061FCE0 /* CoinCalculator */;
+			targetProxy = DAA13C5920219D430061FCE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAA13C4020219D430061FCE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA13C4120219D430061FCE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAA13C4520219D430061FCE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA13C4620219D430061FCE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA13C5F20219D430061FCE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAA13C6020219D430061FCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAA13C6220219D430061FCE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
+				INFOPLIST_FILE = CoinCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAA13C6320219D430061FCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
+				INFOPLIST_FILE = CoinCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAA13C6520219D430061FCE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
+				INFOPLIST_FILE = CoinCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinCalculator.app/CoinCalculator";
+			};
+			name = Debug;
+		};
+		DAA13C6620219D430061FCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
+				INFOPLIST_FILE = CoinCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinCalculator.app/CoinCalculator";
+			};
+			name = Release;
+		};
+		DAA13C6820219D430061FCE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
+				INFOPLIST_FILE = CoinCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinCalculator;
+			};
+			name = Debug;
+		};
+		DAA13C6920219D430061FCE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
+				INFOPLIST_FILE = CoinCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA13C3420219D420061FCE0 /* Build configuration list for PBXProject "CoinCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA13C5F20219D430061FCE0 /* Debug */,
+				DAA13C6020219D430061FCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA13C6120219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA13C6220219D430061FCE0 /* Debug */,
+				DAA13C6320219D430061FCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA13C6420219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA13C6520219D430061FCE0 /* Debug */,
+				DAA13C6620219D430061FCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA13C6720219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA13C6820219D430061FCE0 /* Debug */,
+				DAA13C6920219D430061FCE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA13C3120219D420061FCE0 /* Project object */;
+}
