@@ -17,6 +17,7 @@
 		DA9EF0332021ABC90068E900 /* Qtum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02A2021ABC90068E900 /* Qtum_logo.png */; };
 		DA9EF0342021ABC90068E900 /* bitcoin-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */; };
 		DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EF0362021B5740068E900 /* CoinListCell.swift */; };
+		DA9EF0392021D8BF0068E900 /* VirtualCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EF0382021D8BF0068E900 /* VirtualCurrency.swift */; };
 		DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3C20219D420061FCE0 /* AppDelegate.swift */; };
 		DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3E20219D430061FCE0 /* MainViewController.swift */; };
 		DAA13C4220219D430061FCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C4020219D430061FCE0 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		DA9EF02A2021ABC90068E900 /* Qtum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Qtum_logo.png; sourceTree = "<group>"; };
 		DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-logo.png"; sourceTree = "<group>"; };
 		DA9EF0362021B5740068E900 /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
+		DA9EF0382021D8BF0068E900 /* VirtualCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrency.swift; sourceTree = "<group>"; };
 		DAA13C3920219D420061FCE0 /* CoinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA13C3C20219D420061FCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA13C3E20219D430061FCE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		DA9EF0352021AC0B0068E900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA9EF0382021D8BF0068E900 /* VirtualCurrency.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			files = (
 				DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */,
 				DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */,
+				DA9EF0392021D8BF0068E900 /* VirtualCurrency.swift in Sources */,
 				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

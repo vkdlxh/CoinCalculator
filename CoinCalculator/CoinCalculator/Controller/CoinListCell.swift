@@ -9,7 +9,17 @@
 import UIKit
 
 class CoinListCell: UITableViewCell {
+    
+    var virtualCurrency: VirtualCurrency? {
+        didSet {
+            // TODO: Cellに値を設定
+        }
+    }
 
+    @IBOutlet weak var marketNameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var logoLabel: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

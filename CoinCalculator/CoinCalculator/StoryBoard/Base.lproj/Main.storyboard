@@ -69,6 +69,11 @@
                                                 <constraint firstItem="SRC-zy-OaH" firstAttribute="top" secondItem="HhN-Ic-HjN" secondAttribute="top" constant="25" id="yUG-Mv-UiQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="logoLabel" destination="SRC-zy-OaH" id="clT-C1-LEH"/>
+                                            <outlet property="marketNameLabel" destination="DYY-ak-qKU" id="Ox2-d2-sbO"/>
+                                            <outlet property="priceLabel" destination="1pZ-eq-Plb" id="CkS-xO-Z6q"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
