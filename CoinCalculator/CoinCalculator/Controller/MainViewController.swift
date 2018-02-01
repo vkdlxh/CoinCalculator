@@ -9,10 +9,25 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
+    var isCalculatorHide: Bool = true
+    
+    @IBOutlet weak var calculatorHeight: NSLayoutConstraint!
+    
+    @IBAction func showCalculatorPressed(_ sender: Any) {
+        if isCalculatorHide {
+            calculatorHeight.constant = self.view.bounds.height / 2
+            isCalculatorHide = false
+        } else {
+            calculatorHeight.constant = 0
+            isCalculatorHide = true
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        calculatorHeight.constant = 0
     }
 
 }
