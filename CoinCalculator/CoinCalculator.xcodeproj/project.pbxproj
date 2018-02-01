@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */; };
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
 		DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */; };
 		DA9EF02E2021ABC90068E900 /* litecoin_png.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0252021ABC80068E900 /* litecoin_png.png */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
 		DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_cash_logo.png; sourceTree = "<group>"; };
 		DA9EF0252021ABC80068E900 /* litecoin_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin_png.png; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		DAA13C3B20219D420061FCE0 /* CoinCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */,
 				DAA13C4820219D430061FCE0 /* Info.plist */,
 				DA9EF0352021AC0B0068E900 /* Model */,
 				DAA13C6C20219E540061FCE0 /* Controller */,
@@ -345,6 +348,7 @@
 				DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */,
 				DA9EF0392021D8BF0068E900 /* VirtualCurrency.swift in Sources */,
 				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
+				DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
