@@ -25,6 +25,7 @@
 		DA72F89D202824D500C23412 /* BoardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F88F202824D500C23412 /* BoardState.swift */; };
 		DA72F89E202824D500C23412 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F890202824D500C23412 /* Market.swift */; };
 		DA72F89F202824D500C23412 /* BFCoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F891202824D500C23412 /* BFCoinManager.swift */; };
+		DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F8A0202826F000C23412 /* CoinInforViewController.swift */; };
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
 		DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */; };
 		DA9EF02E2021ABC90068E900 /* litecoin_png.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0252021ABC80068E900 /* litecoin_png.png */; };
@@ -86,6 +87,7 @@
 		DA72F88F202824D500C23412 /* BoardState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardState.swift; sourceTree = "<group>"; };
 		DA72F890202824D500C23412 /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		DA72F891202824D500C23412 /* BFCoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCoinManager.swift; sourceTree = "<group>"; };
+		DA72F8A0202826F000C23412 /* CoinInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInforViewController.swift; sourceTree = "<group>"; };
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
 		DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_cash_logo.png; sourceTree = "<group>"; };
 		DA9EF0252021ABC80068E900 /* litecoin_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin_png.png; sourceTree = "<group>"; };
@@ -240,12 +242,12 @@
 		DAA13C3B20219D420061FCE0 /* CoinCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DAA13C6B20219E490061FCE0 /* StoryBoard */,
+				DAA13C6C20219E540061FCE0 /* Controller */,
+				DAA13C6A20219DC00061FCE0 /* Supporting Files */,
 				DA72F881202824D500C23412 /* BFCoinManager */,
 				DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */,
 				DAA13C4820219D430061FCE0 /* Info.plist */,
-				DAA13C6C20219E540061FCE0 /* Controller */,
-				DAA13C6B20219E490061FCE0 /* StoryBoard */,
-				DAA13C6A20219DC00061FCE0 /* Supporting Files */,
 			);
 			path = CoinCalculator;
 			sourceTree = "<group>";
@@ -292,6 +294,7 @@
 			children = (
 				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
 				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
+				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				DA72F896202824D500C23412 /* AppDelegate+RealtimeAPI.swift in Sources */,
 				DA72F894202824D500C23412 /* BFCoinAPI.swift in Sources */,
 				DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */,
+				DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */,
 				DA72F897202824D500C23412 /* ChartData.swift in Sources */,
 				DA72F89B202824D500C23412 /* Chat.swift in Sources */,
 				DA72F892202824D500C23412 /* Date+Helper.swift in Sources */,
