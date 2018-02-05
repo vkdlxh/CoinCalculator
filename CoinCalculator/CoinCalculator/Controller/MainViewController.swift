@@ -86,6 +86,9 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initCalculator()
+        
+        //Add Observer
+        BFLCoinManager.shared.addObserver(self)
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
@@ -150,7 +153,18 @@ extension MainViewController: UITableViewDataSource {
         }
         return UITableViewCell()
     }
+
+}
+
+extension MainViewController : BFLCoinManagerDataChanged {
     
+    func coinDataDidLoad(_ context:BFContext) {
+        print("context loaded!!")
+        //print(context)
+    }
     
+    func coinDataChanged(channel: Channel, productCode: String, data: Any) {
+        print("context changed!!")
+    }
 }
 

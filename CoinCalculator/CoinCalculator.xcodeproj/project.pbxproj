@@ -11,6 +11,20 @@
 		94A62F8C0FE581EF2FDFB059 /* Pods_CoinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */; };
 		C02B6041B3FAA0F40E4DE736 /* Pods_CoinCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DAA792A1A61822044E1E59 /* Pods_CoinCalculatorUITests.framework */; };
 		DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */; };
+		DA72F892202824D500C23412 /* Date+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F883202824D500C23412 /* Date+Helper.swift */; };
+		DA72F893202824D500C23412 /* BFCoinRealtimeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F884202824D500C23412 /* BFCoinRealtimeAPI.swift */; };
+		DA72F894202824D500C23412 /* BFCoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F885202824D500C23412 /* BFCoinAPI.swift */; };
+		DA72F895202824D500C23412 /* BFContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F886202824D500C23412 /* BFContext.swift */; };
+		DA72F896202824D500C23412 /* AppDelegate+RealtimeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F887202824D500C23412 /* AppDelegate+RealtimeAPI.swift */; };
+		DA72F897202824D500C23412 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F889202824D500C23412 /* ChartData.swift */; };
+		DA72F898202824D500C23412 /* Execution.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F88A202824D500C23412 /* Execution.swift */; };
+		DA72F899202824D500C23412 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F88B202824D500C23412 /* Health.swift */; };
+		DA72F89A202824D500C23412 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F88C202824D500C23412 /* Board.swift */; };
+		DA72F89B202824D500C23412 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F88D202824D500C23412 /* Chat.swift */; };
+		DA72F89C202824D500C23412 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F88E202824D500C23412 /* Ticker.swift */; };
+		DA72F89D202824D500C23412 /* BoardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F88F202824D500C23412 /* BoardState.swift */; };
+		DA72F89E202824D500C23412 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F890202824D500C23412 /* Market.swift */; };
+		DA72F89F202824D500C23412 /* BFCoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F891202824D500C23412 /* BFCoinManager.swift */; };
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
 		DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */; };
 		DA9EF02E2021ABC90068E900 /* litecoin_png.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0252021ABC80068E900 /* litecoin_png.png */; };
@@ -21,7 +35,6 @@
 		DA9EF0332021ABC90068E900 /* Qtum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02A2021ABC90068E900 /* Qtum_logo.png */; };
 		DA9EF0342021ABC90068E900 /* bitcoin-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */; };
 		DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EF0362021B5740068E900 /* CoinListCell.swift */; };
-		DA9EF0392021D8BF0068E900 /* VirtualCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EF0382021D8BF0068E900 /* VirtualCurrency.swift */; };
 		DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3C20219D420061FCE0 /* AppDelegate.swift */; };
 		DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3E20219D430061FCE0 /* MainViewController.swift */; };
 		DAA13C4220219D430061FCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C4020219D430061FCE0 /* Main.storyboard */; };
@@ -59,6 +72,20 @@
 		D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1B185AEC93EF09BF8470D7 /* Pods-CoinCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		DA72F883202824D500C23412 /* Date+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Helper.swift"; sourceTree = "<group>"; };
+		DA72F884202824D500C23412 /* BFCoinRealtimeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCoinRealtimeAPI.swift; sourceTree = "<group>"; };
+		DA72F885202824D500C23412 /* BFCoinAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCoinAPI.swift; sourceTree = "<group>"; };
+		DA72F886202824D500C23412 /* BFContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFContext.swift; sourceTree = "<group>"; };
+		DA72F887202824D500C23412 /* AppDelegate+RealtimeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+RealtimeAPI.swift"; sourceTree = "<group>"; };
+		DA72F889202824D500C23412 /* ChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		DA72F88A202824D500C23412 /* Execution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Execution.swift; sourceTree = "<group>"; };
+		DA72F88B202824D500C23412 /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		DA72F88C202824D500C23412 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		DA72F88D202824D500C23412 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		DA72F88E202824D500C23412 /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		DA72F88F202824D500C23412 /* BoardState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardState.swift; sourceTree = "<group>"; };
+		DA72F890202824D500C23412 /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		DA72F891202824D500C23412 /* BFCoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCoinManager.swift; sourceTree = "<group>"; };
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
 		DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_cash_logo.png; sourceTree = "<group>"; };
 		DA9EF0252021ABC80068E900 /* litecoin_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin_png.png; sourceTree = "<group>"; };
@@ -69,7 +96,6 @@
 		DA9EF02A2021ABC90068E900 /* Qtum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Qtum_logo.png; sourceTree = "<group>"; };
 		DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-logo.png"; sourceTree = "<group>"; };
 		DA9EF0362021B5740068E900 /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
-		DA9EF0382021D8BF0068E900 /* VirtualCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrency.swift; sourceTree = "<group>"; };
 		DAA13C3920219D420061FCE0 /* CoinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA13C3C20219D420061FCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA13C3E20219D430061FCE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +162,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA72F881202824D500C23412 /* BFCoinManager */ = {
+			isa = PBXGroup;
+			children = (
+				DA72F882202824D500C23412 /* Extension */,
+				DA72F884202824D500C23412 /* BFCoinRealtimeAPI.swift */,
+				DA72F885202824D500C23412 /* BFCoinAPI.swift */,
+				DA72F886202824D500C23412 /* BFContext.swift */,
+				DA72F887202824D500C23412 /* AppDelegate+RealtimeAPI.swift */,
+				DA72F888202824D500C23412 /* Model */,
+				DA72F891202824D500C23412 /* BFCoinManager.swift */,
+			);
+			path = BFCoinManager;
+			sourceTree = "<group>";
+		};
+		DA72F882202824D500C23412 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA72F883202824D500C23412 /* Date+Helper.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DA72F888202824D500C23412 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA72F889202824D500C23412 /* ChartData.swift */,
+				DA72F88A202824D500C23412 /* Execution.swift */,
+				DA72F88B202824D500C23412 /* Health.swift */,
+				DA72F88C202824D500C23412 /* Board.swift */,
+				DA72F88D202824D500C23412 /* Chat.swift */,
+				DA72F88E202824D500C23412 /* Ticker.swift */,
+				DA72F88F202824D500C23412 /* BoardState.swift */,
+				DA72F890202824D500C23412 /* Market.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,14 +213,6 @@
 				DA9EF0282021ABC90068E900 /* zcash_logo.png */,
 			);
 			path = images;
-			sourceTree = "<group>";
-		};
-		DA9EF0352021AC0B0068E900 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DA9EF0382021D8BF0068E900 /* VirtualCurrency.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		DAA13C3020219D420061FCE0 = {
@@ -185,9 +240,9 @@
 		DAA13C3B20219D420061FCE0 /* CoinCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DA72F881202824D500C23412 /* BFCoinManager */,
 				DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */,
 				DAA13C4820219D430061FCE0 /* Info.plist */,
-				DA9EF0352021AC0B0068E900 /* Model */,
 				DAA13C6C20219E540061FCE0 /* Controller */,
 				DAA13C6B20219E490061FCE0 /* StoryBoard */,
 				DAA13C6A20219DC00061FCE0 /* Supporting Files */,
@@ -546,10 +601,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */,
+				DA72F89D202824D500C23412 /* BoardState.swift in Sources */,
+				DA72F893202824D500C23412 /* BFCoinRealtimeAPI.swift in Sources */,
 				DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */,
-				DA9EF0392021D8BF0068E900 /* VirtualCurrency.swift in Sources */,
+				DA72F89A202824D500C23412 /* Board.swift in Sources */,
 				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
+				DA72F895202824D500C23412 /* BFContext.swift in Sources */,
+				DA72F898202824D500C23412 /* Execution.swift in Sources */,
+				DA72F899202824D500C23412 /* Health.swift in Sources */,
+				DA72F89C202824D500C23412 /* Ticker.swift in Sources */,
+				DA72F896202824D500C23412 /* AppDelegate+RealtimeAPI.swift in Sources */,
+				DA72F894202824D500C23412 /* BFCoinAPI.swift in Sources */,
 				DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */,
+				DA72F897202824D500C23412 /* ChartData.swift in Sources */,
+				DA72F89B202824D500C23412 /* Chat.swift in Sources */,
+				DA72F892202824D500C23412 /* Date+Helper.swift in Sources */,
+				DA72F89F202824D500C23412 /* BFCoinManager.swift in Sources */,
+				DA72F89E202824D500C23412 /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

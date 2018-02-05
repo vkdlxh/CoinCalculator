@@ -10,11 +10,11 @@ import UIKit
 
 class CoinListCell: UITableViewCell {
     
-    var virtualCurrency: VirtualCurrency? {
-        didSet {
-            // TODO: Cellに値を設定
-        }
-    }
+//    var virtualCurrency: VirtualCurrency? {
+//        didSet {
+//            // TODO: Cellに値を設定
+//        }
+//    }
 
     @IBOutlet weak var marketNameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
