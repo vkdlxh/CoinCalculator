@@ -14,22 +14,36 @@ class CoinListCell: UITableViewCell {
         didSet {
             // TODO: Cellに値を設定
             marketNameLabel.text = market?.productCode
+            BFCoinAPI.requestTicker(market?.productCode) { (ticker) in
+                self.bestBidLabel.text = "\(ticker.bestBid)"
+                self.bestBidSizeLabel.text = "\(ticker.bestBidSize)"
+                self.bestAskLabel.text = "\(ticker.bestAsk)"
+                self.bestAskSizeLabel.text = "\(ticker.bestAskSize)"
+                if let timestamp = ticker.timestamp {
+                   self.timestampLabel.text = "\(timestamp)"
+                }
+                self.volumLabel.text = "\(ticker.volume)"
+            }
         }
     }
 
     @IBOutlet weak var marketNameLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var logoLabel: UIImageView!
+    @IBOutlet weak var bestBidLabel: UILabel!
+    @IBOutlet weak var bestBidSizeLabel: UILabel!
+    @IBOutlet weak var bestAskLabel: UILabel!
+    @IBOutlet weak var bestAskSizeLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
+    @IBOutlet weak var volumLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    override func prepareForReuse() {
+        super.prepareForReuse()
     }
 
 }

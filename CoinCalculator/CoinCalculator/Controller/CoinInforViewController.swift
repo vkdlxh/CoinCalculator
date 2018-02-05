@@ -12,19 +12,42 @@ class CoinInforViewController: UIViewController {
 
     var market: Market!
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var marketView: UIView!
+    @IBOutlet weak var chartView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = market.productCode
+        
+        setupSegmentedControl()
+    }
+    
+    private func setupSegmentedControl() {
+        // Configure Segmented Control
+        segmentedControl.removeAllSegments()
+        segmentedControl.insertSegment(withTitle: "気配", at: 0, animated: false)
+        segmentedControl.insertSegment(withTitle: "チャート", at: 1, animated: false)
+        segmentedControl.addTarget(self, action: #selector(selectionDidChange(_:)), for: .valueChanged)
+        
+        // Select First Segment
+        segmentedControl.selectedSegmentIndex = 0
+    }
+    
+    @objc private func selectionDidChange(_ sender: UISegmentedControl)
+    {
+        switch segmentedControl.selectedSegmentIndex
+        {
+        case 0:
+            marketView.isHidden = false
+            chartView.isHidden = true
+        case 1:
+            marketView.isHidden = true
+            chartView.isHidden = false
+        default:
+            break;
+        }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

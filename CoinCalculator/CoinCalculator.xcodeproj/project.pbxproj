@@ -43,6 +43,8 @@
 		DAA13C4720219D430061FCE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA13C4520219D430061FCE0 /* LaunchScreen.storyboard */; };
 		DAA13C5220219D430061FCE0 /* CoinCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5120219D430061FCE0 /* CoinCalculatorTests.swift */; };
 		DAA13C5D20219D430061FCE0 /* CoinCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */; };
+		DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55420285B1900CE289E /* MarketViewController.swift */; };
+		DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55620285B2D00CE289E /* ChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		DAA13C5820219D430061FCE0 /* CoinCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCalculatorUITests.swift; sourceTree = "<group>"; };
 		DAA13C5E20219D430061FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC6B55420285B1900CE289E /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		DAC6B55620285B2D00CE289E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +299,8 @@
 				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
 				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
 				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
+				DAC6B55420285B1900CE289E /* MarketViewController.swift */,
+				DAC6B55620285B2D00CE289E /* ChartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -611,10 +617,12 @@
 				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
 				DA72F895202824D500C23412 /* BFContext.swift in Sources */,
 				DA72F898202824D500C23412 /* Execution.swift in Sources */,
+				DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */,
 				DA72F899202824D500C23412 /* Health.swift in Sources */,
 				DA72F89C202824D500C23412 /* Ticker.swift in Sources */,
 				DA72F896202824D500C23412 /* AppDelegate+RealtimeAPI.swift in Sources */,
 				DA72F894202824D500C23412 /* BFCoinAPI.swift in Sources */,
+				DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */,
 				DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */,
 				DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */,
 				DA72F897202824D500C23412 /* ChartData.swift in Sources */,
