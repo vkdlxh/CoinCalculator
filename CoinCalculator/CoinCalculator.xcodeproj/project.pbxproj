@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015900783247EEF9BE7BD8D9 /* Pods_CoinCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B33EB7C88836EB68612D67 /* Pods_CoinCalculatorTests.framework */; };
+		94A62F8C0FE581EF2FDFB059 /* Pods_CoinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */; };
+		C02B6041B3FAA0F40E4DE736 /* Pods_CoinCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DAA792A1A61822044E1E59 /* Pods_CoinCalculatorUITests.framework */; };
 		DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */; };
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
 		DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */; };
@@ -46,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001EF5B27B763C20F49D31D8 /* Pods-CoinCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46DAA792A1A61822044E1E59 /* Pods_CoinCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56A05D3E1B80D121F4E6B8C3 /* Pods-CoinCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56B33EB7C88836EB68612D67 /* Pods_CoinCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0739B1A5CA2FD982CDAEA7 /* Pods-CoinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		8F9F55D54272E5AD8A2FC190 /* Pods-CoinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		CAB527DDC234A594130FB113 /* Pods-CoinCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1B185AEC93EF09BF8470D7 /* Pods-CoinCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
 		DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_cash_logo.png; sourceTree = "<group>"; };
@@ -78,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A62F8C0FE581EF2FDFB059 /* Pods_CoinCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015900783247EEF9BE7BD8D9 /* Pods_CoinCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02B6041B3FAA0F40E4DE736 /* Pods_CoinCalculatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45354D27272089EC772EDB41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C0739B1A5CA2FD982CDAEA7 /* Pods-CoinCalculator.debug.xcconfig */,
+				8F9F55D54272E5AD8A2FC190 /* Pods-CoinCalculator.release.xcconfig */,
+				DA1B185AEC93EF09BF8470D7 /* Pods-CoinCalculatorTests.debug.xcconfig */,
+				CAB527DDC234A594130FB113 /* Pods-CoinCalculatorTests.release.xcconfig */,
+				001EF5B27B763C20F49D31D8 /* Pods-CoinCalculatorUITests.debug.xcconfig */,
+				56A05D3E1B80D121F4E6B8C3 /* Pods-CoinCalculatorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6AA65E5DEB3B17207E9ACC88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */,
+				56B33EB7C88836EB68612D67 /* Pods_CoinCalculatorTests.framework */,
+				46DAA792A1A61822044E1E59 /* Pods_CoinCalculatorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +167,8 @@
 				DAA13C5020219D430061FCE0 /* CoinCalculatorTests */,
 				DAA13C5B20219D430061FCE0 /* CoinCalculatorUITests */,
 				DAA13C3A20219D420061FCE0 /* Products */,
+				45354D27272089EC772EDB41 /* Pods */,
+				6AA65E5DEB3B17207E9ACC88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA13C6120219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculator" */;
 			buildPhases = (
+				6C993DE684EC5378A0195BAF /* [CP] Check Pods Manifest.lock */,
 				DAA13C3520219D420061FCE0 /* Sources */,
 				DAA13C3620219D420061FCE0 /* Frameworks */,
 				DAA13C3720219D420061FCE0 /* Resources */,
+				9E3DB8506EA65239DD7E6267 /* [CP] Embed Pods Frameworks */,
+				78C9F38506B7D18B924849DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA13C6420219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculatorTests" */;
 			buildPhases = (
+				26C2BBBC1479F7CC1CE31EA7 /* [CP] Check Pods Manifest.lock */,
 				DAA13C4920219D430061FCE0 /* Sources */,
 				DAA13C4A20219D430061FCE0 /* Frameworks */,
 				DAA13C4B20219D430061FCE0 /* Resources */,
+				F05A8B6D81A425A12B176FB6 /* [CP] Embed Pods Frameworks */,
+				5F361451D3071B5669F7099A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA13C6720219D430061FCE0 /* Build configuration list for PBXNativeTarget "CoinCalculatorUITests" */;
 			buildPhases = (
+				344C42DDE60E6FCF79F076F2 /* [CP] Check Pods Manifest.lock */,
 				DAA13C5420219D430061FCE0 /* Sources */,
 				DAA13C5520219D430061FCE0 /* Frameworks */,
 				DAA13C5620219D430061FCE0 /* Resources */,
+				D84F887AF4F299E63626B084 /* [CP] Embed Pods Frameworks */,
+				99CDF14FFD5A6D9507C0B284 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,6 +387,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26C2BBBC1479F7CC1CE31EA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinCalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		344C42DDE60E6FCF79F076F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinCalculatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F361451D3071B5669F7099A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C993DE684EC5378A0195BAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78C9F38506B7D18B924849DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99CDF14FFD5A6D9507C0B284 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3DB8506EA65239DD7E6267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D84F887AF4F299E63626B084 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05A8B6D81A425A12B176FB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAA13C3520219D420061FCE0 /* Sources */ = {
@@ -512,6 +713,7 @@
 		};
 		DAA13C6220219D430061FCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0739B1A5CA2FD982CDAEA7 /* Pods-CoinCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +729,7 @@
 		};
 		DAA13C6320219D430061FCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9F55D54272E5AD8A2FC190 /* Pods-CoinCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +745,7 @@
 		};
 		DAA13C6520219D430061FCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1B185AEC93EF09BF8470D7 /* Pods-CoinCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +763,7 @@
 		};
 		DAA13C6620219D430061FCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAB527DDC234A594130FB113 /* Pods-CoinCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +781,7 @@
 		};
 		DAA13C6820219D430061FCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001EF5B27B763C20F49D31D8 /* Pods-CoinCalculatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +798,7 @@
 		};
 		DAA13C6920219D430061FCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A05D3E1B80D121F4E6B8C3 /* Pods-CoinCalculatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
