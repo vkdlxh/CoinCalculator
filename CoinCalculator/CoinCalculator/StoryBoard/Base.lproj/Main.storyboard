@@ -112,7 +112,7 @@
                                                             <rect key="frame" x="0.0" y="19.5" width="145" height="18"/>
                                                             <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="145" id="tdl-Uq-cWv"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="145" id="tdl-Uq-cWv"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>

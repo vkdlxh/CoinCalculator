@@ -113,7 +113,7 @@ class MainViewController: UIViewController {
         let context = BFCoinManager.shared.context
         let sortedTickers = context.tickers.sorted { $0.productCode! < $1.productCode! }
         tickers = sortedTickers
-//        tableView.reloadData()
+        tableView.reloadData()
     }
     
     private func initCalculator() {
