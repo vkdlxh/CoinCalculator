@@ -1,6 +1,6 @@
 //
 //  BFCoinManager.swift
-//  BFLCoinManager
+//  BFCoinManager
 //
 //  Created by jaeeun on 2018/01/30.
 //  Copyright © 2018年 leejaeeun. All rights reserved.
@@ -9,12 +9,12 @@
 import Foundation
 import PubNub
 
-protocol BFLCoinManagerDataChanged : AnyObject {
+protocol BFCoinManagerDataChanged : AnyObject {
     func coinDataDidLoad(_ context:BFContext)
     func coinDataChanged(channel: Channel, productCode: String, data:Any)
 }
 
-final class BFLCoinManager {
+final class BFCoinManager {
     
     open private(set) var context         : BFContext
     
@@ -23,11 +23,11 @@ final class BFLCoinManager {
     open private(set) var realtimeClient  : PubNub
     open var contextLoaded = false
     
-    private var observers = Array<BFLCoinManagerDataChanged>()
+    private var observers = Array<BFCoinManagerDataChanged>()
     
     
     //var context : Dictionary?
-    static let shared: BFLCoinManager = BFLCoinManager()
+    static let shared: BFCoinManager = BFCoinManager()
     
     private init() {
         
@@ -39,7 +39,7 @@ final class BFLCoinManager {
     }
     
     //MARK: Observer
-    open func addObserver(_ observer: BFLCoinManagerDataChanged) {
+    open func addObserver(_ observer: BFCoinManagerDataChanged) {
         for item in observers {
             if item === observer {
                 return
@@ -50,7 +50,7 @@ final class BFLCoinManager {
         observers.append(observer)
     }
     
-    open func removeObserver(_ observer: BFLCoinManagerDataChanged) {
+    open func removeObserver(_ observer: BFCoinManagerDataChanged) {
         
         for (index, item) in observers.enumerated() {
             if item === observer {
@@ -245,7 +245,11 @@ final class BFLCoinManager {
     private func updateContextTicker(_ productCode:String, diff: Ticker) {
         
         for (index, ticker) in self.context.tickers.enumerated() {
-            if ticker.productCode == productCode {
+            
+            guard let code = ticker.productCode else {
+                continue
+            }
+            if code == productCode {
                 self.context.tickers.remove(at: index)
                 break
             }
@@ -265,23 +269,23 @@ final class BFLCoinManager {
 }
 
 //MARK: ロック制御
-extension BFLCoinManager {
+extension BFCoinManager {
     
     static private var keepAliveCount = 0
     
     fileprivate func keepAliveCountUp() {
-        BFLCoinManager.keepAliveCount = BFLCoinManager.keepAliveCount + 1
-        print("keepAliveCount: \(print(BFLCoinManager.keepAliveCount))")
+        BFCoinManager.keepAliveCount = BFCoinManager.keepAliveCount + 1
+        print("keepAliveCount: \(print(BFCoinManager.keepAliveCount))")
     }
     
     fileprivate func keepAliveCountDown() {
-        BFLCoinManager.keepAliveCount = BFLCoinManager.keepAliveCount - 1
-        print("keepAliveCount: \(print(BFLCoinManager.keepAliveCount))")
+        BFCoinManager.keepAliveCount = BFCoinManager.keepAliveCount - 1
+        print("keepAliveCount: \(print(BFCoinManager.keepAliveCount))")
     }
     
     fileprivate func waitKeepAlive() {
         let runLoop = RunLoop.current
-        while BFLCoinManager.keepAliveCount > 0 &&
+        while BFCoinManager.keepAliveCount > 0 &&
             runLoop.run(mode: .defaultRunLoopMode, before: Date(timeIntervalSinceNow: 0.1)) {
                 // 0.1秒毎の処理なので、処理が止まらない
         }
