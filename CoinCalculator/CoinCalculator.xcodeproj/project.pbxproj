@@ -29,12 +29,12 @@
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
 		DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */; };
 		DA9EF02E2021ABC90068E900 /* litecoin_png.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0252021ABC80068E900 /* litecoin_png.png */; };
-		DA9EF02F2021ABC90068E900 /* etherum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0262021ABC90068E900 /* etherum_logo.png */; };
+		DA9EF02F2021ABC90068E900 /* ETH_BTC.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0262021ABC90068E900 /* ETH_BTC.png */; };
 		DA9EF0302021ABC90068E900 /* ripple_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0272021ABC90068E900 /* ripple_logo.png */; };
 		DA9EF0312021ABC90068E900 /* zcash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0282021ABC90068E900 /* zcash_logo.png */; };
 		DA9EF0322021ABC90068E900 /* dash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0292021ABC90068E900 /* dash_logo.png */; };
 		DA9EF0332021ABC90068E900 /* Qtum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02A2021ABC90068E900 /* Qtum_logo.png */; };
-		DA9EF0342021ABC90068E900 /* bitcoin-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */; };
+		DA9EF0342021ABC90068E900 /* BTC_JPY.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF02B2021ABC90068E900 /* BTC_JPY.png */; };
 		DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9EF0362021B5740068E900 /* CoinListCell.swift */; };
 		DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3C20219D420061FCE0 /* AppDelegate.swift */; };
 		DAA13C3F20219D430061FCE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C3E20219D430061FCE0 /* MainViewController.swift */; };
@@ -45,6 +45,8 @@
 		DAA13C5D20219D430061FCE0 /* CoinCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */; };
 		DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55420285B1900CE289E /* MarketViewController.swift */; };
 		DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55620285B2D00CE289E /* ChartViewController.swift */; };
+		DAC6B55920286E4200CE289E /* MarketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55820286E4200CE289E /* MarketPriceCell.swift */; };
+		DAC6B55B2028784100CE289E /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC6B55A2028784100CE289E /* Chart.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,12 +95,12 @@
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
 		DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_cash_logo.png; sourceTree = "<group>"; };
 		DA9EF0252021ABC80068E900 /* litecoin_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = litecoin_png.png; sourceTree = "<group>"; };
-		DA9EF0262021ABC90068E900 /* etherum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = etherum_logo.png; sourceTree = "<group>"; };
+		DA9EF0262021ABC90068E900 /* ETH_BTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ETH_BTC.png; sourceTree = "<group>"; };
 		DA9EF0272021ABC90068E900 /* ripple_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ripple_logo.png; sourceTree = "<group>"; };
 		DA9EF0282021ABC90068E900 /* zcash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zcash_logo.png; sourceTree = "<group>"; };
 		DA9EF0292021ABC90068E900 /* dash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash_logo.png; sourceTree = "<group>"; };
 		DA9EF02A2021ABC90068E900 /* Qtum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Qtum_logo.png; sourceTree = "<group>"; };
-		DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bitcoin-logo.png"; sourceTree = "<group>"; };
+		DA9EF02B2021ABC90068E900 /* BTC_JPY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BTC_JPY.png; sourceTree = "<group>"; };
 		DA9EF0362021B5740068E900 /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
 		DAA13C3920219D420061FCE0 /* CoinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA13C3C20219D420061FCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,8 @@
 		DAA13C5E20219D430061FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC6B55420285B1900CE289E /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		DAC6B55620285B2D00CE289E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		DAC6B55820286E4200CE289E /* MarketPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceCell.swift; sourceTree = "<group>"; };
+		DAC6B55A2028784100CE289E /* Chart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chart.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,9 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */,
-				DA9EF02B2021ABC90068E900 /* bitcoin-logo.png */,
+				DA9EF02B2021ABC90068E900 /* BTC_JPY.png */,
 				DA9EF0292021ABC90068E900 /* dash_logo.png */,
-				DA9EF0262021ABC90068E900 /* etherum_logo.png */,
+				DA9EF0262021ABC90068E900 /* ETH_BTC.png */,
 				DA9EF0252021ABC80068E900 /* litecoin_png.png */,
 				DA9EF0232021ABC80068E900 /* monero_logo.png */,
 				DA9EF02A2021ABC90068E900 /* Qtum_logo.png */,
@@ -289,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA13C4020219D430061FCE0 /* Main.storyboard */,
+				DAC6B55A2028784100CE289E /* Chart.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
 				DAC6B55420285B1900CE289E /* MarketViewController.swift */,
 				DAC6B55620285B2D00CE289E /* ChartViewController.swift */,
+				DAC6B55820286E4200CE289E /* MarketPriceCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -426,13 +432,14 @@
 				DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */,
 				DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */,
 				DA9EF0322021ABC90068E900 /* dash_logo.png in Resources */,
-				DA9EF0342021ABC90068E900 /* bitcoin-logo.png in Resources */,
+				DA9EF0342021ABC90068E900 /* BTC_JPY.png in Resources */,
 				DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */,
+				DAC6B55B2028784100CE289E /* Chart.storyboard in Resources */,
 				DA9EF02E2021ABC90068E900 /* litecoin_png.png in Resources */,
 				DAA13C4220219D430061FCE0 /* Main.storyboard in Resources */,
 				DA9EF0332021ABC90068E900 /* Qtum_logo.png in Resources */,
 				DA9EF0302021ABC90068E900 /* ripple_logo.png in Resources */,
-				DA9EF02F2021ABC90068E900 /* etherum_logo.png in Resources */,
+				DA9EF02F2021ABC90068E900 /* ETH_BTC.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +621,7 @@
 				DA72F893202824D500C23412 /* BFCoinRealtimeAPI.swift in Sources */,
 				DA9EF0372021B5740068E900 /* CoinListCell.swift in Sources */,
 				DA72F89A202824D500C23412 /* Board.swift in Sources */,
+				DAC6B55920286E4200CE289E /* MarketPriceCell.swift in Sources */,
 				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
 				DA72F895202824D500C23412 /* BFContext.swift in Sources */,
 				DA72F898202824D500C23412 /* Execution.swift in Sources */,

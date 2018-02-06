@@ -10,7 +10,7 @@ import UIKit
 
 class CoinInforViewController: UIViewController {
 
-    var market: Market!
+    var ticker: Ticker!
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var marketView: UIView!
@@ -18,7 +18,7 @@ class CoinInforViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = market.productCode
+        navigationItem.title = ticker.productCode
         
         setupSegmentedControl()
     }

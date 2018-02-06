@@ -19,7 +19,9 @@ enum Operation: String {
 class MainViewController: UIViewController {
     
     // MARK: Properties
-    var markets: [Market] = []
+//    var markets: [Market] = []
+    var context = BFCoinManager.shared.context
+//    var ticekrs: [Ticker] = []
     
     // Calculator
     var isCalculatorHide: Bool = true
@@ -30,7 +32,7 @@ class MainViewController: UIViewController {
     var currentOperation: Operation = .NULL
     
     // MARK: IBOutlets
-    @IBOutlet weak var tabieView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var calculatorView: UIView!
     @IBOutlet weak var showCalculatorButton: UIButton!
@@ -93,13 +95,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initCalculator()
+//        getTickerFromManager()
         
         //Add Observer
-        BFLCoinManager.shared.addObserver(self)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        getMarketList()
+        BFCoinManager.shared.addObserver(self)
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
@@ -111,14 +110,10 @@ class MainViewController: UIViewController {
     // MARK: Internal Methods
     
     // MARK: Private Methods
-    private func getMarketList() {
-        BFCoinAPI.requestMarkets { (markets) in
-            self.markets = markets
-            DispatchQueue.main.async {
-                 self.tabieView.reloadData()
-            }
-        }
-    }
+//    private func getTickerFromManager() {
+//        self.ticekrs = context.tickers
+//        tableView.reloadData()
+//    }
     
     private func initCalculator() {
         outputLabel.text = "0"
@@ -164,8 +159,8 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "CoinInfoSegue" {
             if let destination = segue.destination as? CoinInforViewController {
-                if let selectedIndex = self.tabieView.indexPathForSelectedRow?.row {
-                    destination.market = markets[selectedIndex]
+                if let selectedIndex = self.tableView.indexPathForSelectedRow?.row {
+//                    destination.market = markets[selectedIndex]
                 }
             }
         }
@@ -176,14 +171,15 @@ class MainViewController: UIViewController {
 // MARK: Extensions
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return markets.count
+        return context.tickers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CoinCell") as? CoinListCell {
             // TODO: Coin ModelをCellに渡す
-            cell.market = markets[indexPath.row]
+//            cell.market = markets[indexPath.row]
             
+            cell.ticker = context.tickers[indexPath.row]
             return cell
         }
         return UITableViewCell()
@@ -196,7 +192,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
 
 }
 
-extension MainViewController : BFLCoinManagerDataChanged {
+extension MainViewController : BFCoinManagerDataChanged {
     
     func coinDataDidLoad(_ context:BFContext) {
         print("context loaded!!")
@@ -205,6 +201,9 @@ extension MainViewController : BFLCoinManagerDataChanged {
     
     func coinDataChanged(channel: Channel, productCode: String, data: Any) {
         print("context changed!!")
+//        getTickerFromManager()
+        context = BFCoinManager.shared.context
+        tableView.reloadData()
     }
 }
 
