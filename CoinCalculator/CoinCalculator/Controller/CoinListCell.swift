@@ -10,26 +10,6 @@ import UIKit
 
 class CoinListCell: UITableViewCell {
     
-//    var market: Market? {
-//        didSet {
-//            // TODO: Cellに値を設定
-//            if let productCode = market?.productCode {
-//                marketNameLabel.text = productCode
-//                logoLabel.image = UIImage(named: productCode)
-//            }
-//            BFCoinAPI.requestTicker(market?.productCode) { (ticker) in
-//                self.bestBidLabel.text = "\(ticker.bestBid)"
-//                self.bestBidSizeLabel.text = "\(ticker.bestBidSize)"
-//                self.bestAskLabel.text = "\(ticker.bestAsk)"
-//                self.bestAskSizeLabel.text = "\(ticker.bestAskSize)"
-//                if let timestamp = ticker.timestamp {
-//                   self.timestampLabel.text = "\(timestamp)"
-//                }
-//                self.volumLabel.text = "\(ticker.volume)"
-//            }
-//        }
-//    }
-    
     var ticker: Ticker? {
         didSet {
             // TODO: Cellに値を設定

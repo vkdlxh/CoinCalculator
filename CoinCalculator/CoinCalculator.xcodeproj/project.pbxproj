@@ -264,11 +264,11 @@
 		DAA13C6C20219E540061FCE0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DAC6B5B92029733D00CE289E /* Chart */,
 				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
 				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
 				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
 				DAC6B55420285B1900CE289E /* MarketViewController.swift */,
-				DAC6B55620285B2D00CE289E /* ChartViewController.swift */,
 				DAC6B55820286E4200CE289E /* MarketPriceCell.swift */,
 			);
 			path = Controller;
@@ -309,6 +309,14 @@
 				DAC6B5A920295FA400CE289E /* Market.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DAC6B5B92029733D00CE289E /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				DAC6B55620285B2D00CE289E /* ChartViewController.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
