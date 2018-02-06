@@ -18,6 +18,10 @@ enum Operation: String {
 
 class MainViewController: UIViewController {
     
+    // MARK: Properties
+    var markets: [Market] = []
+    
+    // Calculator
     var isCalculatorHide: Bool = true
     var currentValue = ""
     var leftValue = ""
@@ -25,12 +29,14 @@ class MainViewController: UIViewController {
     var result = ""
     var currentOperation: Operation = .NULL
     
+    // MARK: IBOutlets
+    @IBOutlet weak var tabieView: UITableView!
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var calculatorView: UIView!
     @IBOutlet weak var showCalculatorButton: UIButton!
     @IBOutlet weak var calculatorHeight: NSLayoutConstraint!
     
-    
+    // MARK: IBAction
     @IBAction func numberPressed(_ sender: CalculatorButton) {
         currentValue += "\(sender.tag)"
         outputLabel.text = currentValue
@@ -83,9 +89,17 @@ class MainViewController: UIViewController {
         }
     }
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initCalculator()
+        
+        //Add Observer
+        BFLCoinManager.shared.addObserver(self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getMarketList()
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
@@ -94,14 +108,26 @@ class MainViewController: UIViewController {
         }
     }
     
-    func initCalculator() {
+    // MARK: Internal Methods
+    
+    // MARK: Private Methods
+    private func getMarketList() {
+        BFCoinAPI.requestMarkets { (markets) in
+            self.markets = markets
+            DispatchQueue.main.async {
+                 self.tabieView.reloadData()
+            }
+        }
+    }
+    
+    private func initCalculator() {
         outputLabel.text = "0"
         showCalculatorButton.setTitle("△", for: .normal)
         calculatorView.isHidden = true
         calculatorHeight.constant = 0
     }
     
-    func operation(opertaion: Operation) {
+    private func operation(opertaion: Operation) {
         if currentOperation != .NULL {
             if currentValue != "" {
                 rightValue = currentValue
@@ -130,27 +156,55 @@ class MainViewController: UIViewController {
             leftValue = currentValue
             currentValue = ""
             currentOperation = opertaion
-            
         }
-        
+    }
+    
+    // MARK: - Navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CoinInfoSegue" {
+            if let destination = segue.destination as? CoinInforViewController {
+                if let selectedIndex = self.tabieView.indexPathForSelectedRow?.row {
+                    destination.market = markets[selectedIndex]
+                }
+            }
+        }
     }
 
 }
 
-extension MainViewController: UITableViewDataSource {
+// MARK: Extensions
+extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return markets.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CoinCell") as? CoinListCell {
             // TODO: Coin ModelをCellに渡す
+            cell.market = markets[indexPath.row]
             
             return cell
         }
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "CoinInfoSegue", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
+}
+
+extension MainViewController : BFLCoinManagerDataChanged {
     
+    func coinDataDidLoad(_ context:BFContext) {
+        print("context loaded!!")
+        //print(context)
+    }
+    
+    func coinDataChanged(channel: Channel, productCode: String, data: Any) {
+        print("context changed!!")
+    }
 }
 
