@@ -40,8 +40,7 @@ class MarketViewController: UIViewController {
 
 }
 
-extension MarketViewController: UITabBarDelegate, UITableViewDataSource {
-    
+extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -80,7 +79,6 @@ extension MarketViewController: UITabBarDelegate, UITableViewDataSource {
             default:
                 break
             }
-            
         }
         return UITableViewCell()
     }
