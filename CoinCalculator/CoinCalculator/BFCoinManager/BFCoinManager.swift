@@ -245,7 +245,11 @@ final class BFCoinManager {
     private func updateContextTicker(_ productCode:String, diff: Ticker) {
         
         for (index, ticker) in self.context.tickers.enumerated() {
-            if ticker.productCode == productCode {
+            
+            guard let code = ticker.productCode else {
+                continue
+            }
+            if code == productCode {
                 self.context.tickers.remove(at: index)
                 break
             }

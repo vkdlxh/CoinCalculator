@@ -35,9 +35,22 @@ final class BFCoinAPI {
      //リクエスト処理の生成
     private class func createRequest(url:String, parameters: Parameters? = nil) -> Alamofire.DataRequest {
     
-        return Alamofire.request("\(host)\(url)",
+        var urlString = "\(host)\(url)"
+        var count = 0
+        if let paramDict = parameters {
+            urlString.append("?")
+            for (key, value) in paramDict {
+                urlString.append("\(key)=\(value)")
+                count = count + 1
+                if (count < paramDict.count) {
+                    urlString.append("&")
+                }
+            }
+        }
+        
+        return Alamofire.request(urlString,
                     method:.get,
-                    parameters: parameters,
+                    parameters: nil,
                     encoding: JSONEncoding.default,
                     headers: BFCoinAPI.CommonHeaders).validate()
     }
@@ -70,7 +83,11 @@ final class BFCoinAPI {
     //板情報
     static func requestBoard(_ productCode: String?, completion: @escaping (Board)->Void) -> Void {
         
-        let parameters = (productCode == nil) ? nil : ["product_code":productCode as Any]
+        var parameters:[String:Any]? = nil
+        
+        if let code = productCode {
+            parameters = ["product_code":code]
+        }
         
         self.createRequest(url: "/board", parameters: parameters).responseJSON { response in
             
@@ -95,7 +112,10 @@ final class BFCoinAPI {
     //Ticker
     static func requestTicker(_ productCode: String?, completion: @escaping (Ticker)->Void) -> Void {
         
-        let parameters = (productCode == nil) ? nil : ["product_code":productCode as Any]
+        var parameters : [String:Any]? = nil
+        if let code = productCode {
+            parameters = ["product_code":code]
+        }
         
         self.createRequest(url: "/ticker", parameters: parameters).responseJSON { response in
             
@@ -120,7 +140,10 @@ final class BFCoinAPI {
     static func requestExecutions(_ productCode: String?, before: String?, after: String?, count: Int?,
                                   completion:@escaping ([Execution])->Void) -> Void {
         
-        let parameters = (productCode == nil) ? nil : ["product_code":productCode as Any]
+        var parameters : [String:Any]? = nil
+        if let code = productCode {
+            parameters = ["product_code":code]
+        }
         
         /*
          count: 結果の個数を指定します。省略した場合の値は 100 です。
@@ -154,7 +177,10 @@ final class BFCoinAPI {
     //板の状態
     static func requestBoardState(_ productCode: String?, completion: @escaping (BoardState)->Void) -> Void {
         
-        let parameters = (productCode == nil) ? nil : ["product_code":productCode as Any]
+        var parameters : [String:Any]? = nil
+        if let code = productCode {
+            parameters = ["product_code":code]
+        }
         
         self.createRequest(url: "/getboardstate", parameters: parameters).responseJSON { response in
             
@@ -177,7 +203,10 @@ final class BFCoinAPI {
     //取引所の状態
     static func requestHealth(_ productCode: String?, completion: @escaping (Health)->Void) -> Void {
         
-        let parameters = (productCode == nil) ? nil : ["product_code":productCode as Any]
+        var parameters : [String:Any]? = nil
+        if let code = productCode {
+            parameters = ["product_code":code]
+        }
         
         self.createRequest(url: "/gethealth", parameters: parameters).responseJSON { response in
             
