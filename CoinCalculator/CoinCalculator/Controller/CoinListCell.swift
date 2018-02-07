@@ -45,8 +45,4 @@ class CoinListCell: UITableViewCell {
         // Initialization code
     }
 
-    override func prepareForReuse() {
-        super.prepareForReuse()
-    }
-
 }

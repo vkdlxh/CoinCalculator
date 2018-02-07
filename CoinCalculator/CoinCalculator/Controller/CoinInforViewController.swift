@@ -11,7 +11,7 @@ import UIKit
 class CoinInforViewController: UIViewController {
 
 //    var ticker: Ticker!
-    var productCode: String?
+    var productCode = ""
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var marketView: UIView!

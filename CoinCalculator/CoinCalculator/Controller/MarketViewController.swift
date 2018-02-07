@@ -10,10 +10,12 @@ import UIKit
 
 class MarketViewController: UIViewController {
     
-    var productCode: String?
+    var productCode = ""
     var context = BFCoinManager.shared.context
     var askRates: [Rate]?
     var bidRates: [Rate]?
+    var askRateCell: [MarketPriceCell] = []
+    var bidRateCell: [MarketPriceCell] = []
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,19 +24,52 @@ class MarketViewController: UIViewController {
 
         //Add Observer
         BFCoinManager.shared.addObserver(self)
-        separateAskAndBid()
+        initCell()
     }
 
-    func separateAskAndBid() {
+    private func separateAskAndBid() {
         context = BFCoinManager.shared.context
         for board in context.boards {
-            if (board[productCode!] != nil) {
-                let matchBoard = board[productCode!]
+            if (board[productCode] != nil) {
+                let matchBoard = board[productCode]
                 askRates = matchBoard?.asks
                 bidRates = matchBoard?.bids
             }
         }
-        tableView.reloadData()
+    }
+    
+    private func initCell() {
+        separateAskAndBid()
+        if let askRates = askRates {
+            for askRate in askRates {
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
+                    cell.askRate = askRate
+                    askRateCell.append(cell)
+                }
+            }
+        }
+        if let bidRates = bidRates {
+            for bidRate in bidRates {
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
+                    cell.bidRate = bidRate
+                    bidRateCell.append(cell)
+                }
+            }
+        }
+    }
+    
+    private func updateCell() {
+        separateAskAndBid()
+        if let askRates = askRates {
+            for (index, askRate) in askRates.enumerated() {
+                askRateCell[index].askRate = askRate
+            }
+        }
+        if let bidRates = bidRates {
+            for (index, bidRate) in bidRates.enumerated() {
+                bidRateCell[index].bidRate = bidRate
+            }
+        }
     }
     
 
@@ -48,15 +83,9 @@ extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            guard let askRatesCount = askRates?.count else {
-                return 0
-            }
-            return askRatesCount
+            return askRateCell.count
         case 1:
-            guard let bidRatesCount = bidRates?.count else {
-                return 0
-            }
-            return bidRatesCount
+            return bidRateCell.count
         default:
             return 0
         }
@@ -64,25 +93,15 @@ extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
-            switch indexPath.section {
-            case 0:
-                if let askRate = askRates?[indexPath.row] {
-                    cell.askRate = askRate
-                    return cell
-                }
-            case 1:
-                if let bidRate = bidRates?[indexPath.row] {
-                    cell.bidRate = bidRate
-                    return cell
-                }
-            default:
-                break
-            }
+        switch indexPath.section {
+        case 0:
+            return askRateCell[indexPath.row]
+        case 1:
+            return bidRateCell[indexPath.row]
+        default:
+            return UITableViewCell()
         }
-        return UITableViewCell()
     }
-    
 }
 
 extension MarketViewController : BFCoinManagerDataChanged {
@@ -94,6 +113,6 @@ extension MarketViewController : BFCoinManagerDataChanged {
     
     func coinDataChanged(channel: Channel, productCode: String, data: Any) {
         print("context changed!!")
-        separateAskAndBid()
+        updateCell()
     }
 }
