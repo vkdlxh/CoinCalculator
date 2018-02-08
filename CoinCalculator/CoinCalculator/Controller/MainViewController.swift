@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
     // MARK: Properties
     var context = BFCoinManager.shared.context
     var tickers: [Ticker] = []
+    var cells: [CoinListCell] = []
     
     // Calculator
     var isCalculatorHide: Bool = true
@@ -97,7 +98,7 @@ class MainViewController: UIViewController {
         
         //Add Observer
         BFCoinManager.shared.addObserver(self)
-        getTickersFromManager()
+        initCells()
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
@@ -113,7 +114,23 @@ class MainViewController: UIViewController {
         let context = BFCoinManager.shared.context
         let sortedTickers = context.tickers.sorted { $0.productCode! < $1.productCode! }
         tickers = sortedTickers
-        tableView.reloadData()
+    }
+    
+    private func initCells() {
+        getTickersFromManager()
+        for ticker in tickers {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "CoinCell") as? CoinListCell {
+                cell.ticker = ticker
+                cells.append(cell)
+            }
+        }
+    }
+    
+    private func updateCell() {
+        getTickersFromManager()
+        for (index, ticker) in tickers.enumerated() {
+            cells[index].ticker = ticker
+        }
     }
     
     private func initCalculator() {
@@ -161,7 +178,7 @@ class MainViewController: UIViewController {
         if segue.identifier == "CoinInfoSegue" {
             if let destination = segue.destination as? CoinInforViewController {
                 if let selectedIndex = self.tableView.indexPathForSelectedRow?.row {
-                    destination.productCode = tickers[selectedIndex].productCode
+                    destination.productCode = tickers[selectedIndex].productCode!
                 }
             }
         }
@@ -172,16 +189,11 @@ class MainViewController: UIViewController {
 // MARK: Extensions
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tickers.count
+        return cells.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "CoinCell") as? CoinListCell {
-            // TODO: Coin ModelをCellに渡す
-            cell.ticker = tickers[indexPath.row]
-            return cell
-        }
-        return UITableViewCell()
+        return cells[indexPath.row]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -200,7 +212,7 @@ extension MainViewController : BFCoinManagerDataChanged {
     
     func coinDataChanged(channel: Channel, productCode: String, data: Any) {
         print("context changed!!")
-        getTickersFromManager()
+        updateCell()
     }
 }
 
