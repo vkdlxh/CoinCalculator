@@ -10,9 +10,7 @@ import UIKit
 
 class CoinInforViewController: UIViewController {
 
-//    var ticker: Ticker!
     var productCode = ""
-//    var ticker: Ticker?
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var marketView: UIView!
@@ -49,10 +47,8 @@ class CoinInforViewController: UIViewController {
         segmentedControl.selectedSegmentIndex = 0
     }
     
-    @objc private func selectionDidChange(_ sender: UISegmentedControl)
-    {
-        switch segmentedControl.selectedSegmentIndex
-        {
+    @objc private func selectionDidChange(_ sender: UISegmentedControl) {
+        switch segmentedControl.selectedSegmentIndex {
         case 0:
             marketView.isHidden = false
             chartView.isHidden = true

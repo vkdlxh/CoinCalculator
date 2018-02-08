@@ -91,7 +91,6 @@ extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
@@ -101,6 +100,10 @@ extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             return UITableViewCell()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
