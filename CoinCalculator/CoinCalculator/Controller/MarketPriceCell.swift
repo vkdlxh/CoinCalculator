@@ -15,6 +15,7 @@ class MarketPriceCell: UITableViewCell {
             if let askRate = askRate {
                 askSizeLabel.text = "\(askRate.size)"
                 priceLabel.text = "\(askRate.price)"
+                priceLabel.textColor = .green
             }
         }
     }
@@ -24,6 +25,7 @@ class MarketPriceCell: UITableViewCell {
             if let bidRate = bidRate {
                 bidSizeLabel.text = "\(bidRate.size)"
                 priceLabel.text = "\(bidRate.price)"
+                priceLabel.textColor = .red
             }
         }
     }
