@@ -20,10 +20,11 @@ class MarketViewController: UIViewController {
     var midPrice = 0
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var messageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        isNoData(false)
         //Add Observer
         BFCoinManager.shared.addObserver(self)
         initCell()
@@ -44,17 +45,19 @@ class MarketViewController: UIViewController {
     
     private func initCell() {
         separateBoard()
-        if let askRates = askRates {
+        if let askRates = askRates, askRates.isEmpty == false {
             for askRate in askRates {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
                     cell.askRate = askRate
                     askRateCell.append(cell)
                 }
             }
-        }
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
-            cell.midPrice = midPrice
-            midCell = cell
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
+                cell.midPrice = midPrice
+                midCell = cell
+            }
+        } else {
+            isNoData(true)
         }
         
         if let bidRates = bidRates {
@@ -69,13 +72,12 @@ class MarketViewController: UIViewController {
     
     private func updateCell() {
         separateBoard()
-        if let askRates = askRates {
+        if let askRates = askRates, askRates.isEmpty == false {
             for (index, askRate) in askRates.enumerated() {
                 askRateCell[index].askRate = askRate
             }
+            midCell.midPrice = midPrice
         }
-        
-        midCell.midPrice = midPrice
         
         if let bidRates = bidRates {
             for (index, bidRate) in bidRates.enumerated() {
@@ -84,7 +86,16 @@ class MarketViewController: UIViewController {
         }
     }
     
-
+    private func isNoData(_ bool: Bool) {
+        if bool {
+            messageLabel.isHidden = false
+            tableView.separatorStyle = .none
+        } else {
+            messageLabel.isHidden = true
+            tableView.separatorStyle = .singleLine
+        }
+        
+    }
 }
 
 extension MarketViewController: UITableViewDelegate, UITableViewDataSource {

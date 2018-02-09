@@ -15,15 +15,19 @@ class CoinInfoView: UIView {
             guard let ticker = ticker else {
                 return
             }
-            ltpLabel.text = "\(ticker.ltp)"
-            bestBidLabel.text = "\(ticker.bestBid)"
-            bestBidSizeLabel.text = "\(ticker.bestBidSize)"
-            bestAskLabel.text = "\(ticker.bestAsk)"
-            bestAskSizeLabel.text = "\(ticker.bestAskSize)"
+            let ltp = ticker.ltp == 0 ? "-" : "\(ticker.ltp)"
+            ltpLabel.text = ltp
+            let bestBid = ticker.bestBid == 0 ? "-" : "\(ticker.bestBid)"
+            bestBidLabel.text = bestBid
+            let bestBidSize = ticker.bestBidSize == 0 ? "-" : "\(ticker.bestBidSize)"
+            bestBidSizeLabel.text = bestBidSize
+            let bestAsk = ticker.bestAsk == 0 ? "-" : "\(ticker.bestAsk)"
+            bestAskLabel.text = bestAsk
+            let bestAskSize = ticker.bestAskSize == 0 ? "-" : "\(ticker.bestAskSize)"
+            bestAskSizeLabel.text = bestAskSize
             if let timestamp = ticker.timestamp {
                 timestampLabel.text = "\(timestamp)"
             }
-            
         }
     }
     
