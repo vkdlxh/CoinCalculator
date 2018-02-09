@@ -24,7 +24,8 @@ import Foundation
  */
 struct Ticker {
     var productCode :String?
-    var timestamp   :Date?
+//    var timestamp   :Date?
+    var timestamp: String?
     var tickId :UInt64  = 0
     var bestBid         = 0
     var bestAsk         = 0
@@ -43,9 +44,11 @@ struct Ticker {
         }
         
         if let timestamp = dictionary["timestamp"] as? String {
-            if let date = Date.stringDate(timestamp) {
-                self.timestamp = date
-            }
+//            if let date = Date.stringDate(timestamp) {
+//                self.timestamp = date
+//            }
+            let date = Date.stringToString(timestamp)
+            self.timestamp = date
         }
         
         if let tick_id = dictionary["tick_id"] as? UInt64 {
