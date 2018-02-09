@@ -48,6 +48,8 @@
 		DAC6B5B720295FA400CE289E /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B5A920295FA400CE289E /* Market.swift */; };
 		DAC6B5B820295FA400CE289E /* BFCoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B5AA20295FA400CE289E /* BFCoinManager.swift */; };
 		DAC6B5BD202C214500CE289E /* CoinInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B5BC202C214500CE289E /* CoinInfoView.swift */; };
+		DAC6B5BF202D3D4A00CE289E /* coin_calc_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC6B5BE202D3D4800CE289E /* coin_calc_icon.png */; };
+		DAC6B5C1202D4F4700CE289E /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC6B5C0202D4F4600CE289E /* splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,8 @@
 		DAC6B5A920295FA400CE289E /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		DAC6B5AA20295FA400CE289E /* BFCoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCoinManager.swift; sourceTree = "<group>"; };
 		DAC6B5BC202C214500CE289E /* CoinInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoView.swift; sourceTree = "<group>"; };
+		DAC6B5BE202D3D4800CE289E /* coin_calc_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin_calc_icon.png; sourceTree = "<group>"; };
+		DAC6B5C0202D4F4600CE289E /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,8 @@
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DAC6B5BE202D3D4800CE289E /* coin_calc_icon.png */,
+				DAC6B5C0202D4F4600CE289E /* splash.png */,
 				DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */,
 				DA9EF02B2021ABC90068E900 /* BTC_JPY.png */,
 				DA9EF0292021ABC90068E900 /* dash_logo.png */,
@@ -442,6 +448,8 @@
 				DAA13C4720219D430061FCE0 /* LaunchScreen.storyboard in Resources */,
 				DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */,
 				DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */,
+				DAC6B5C1202D4F4700CE289E /* splash.png in Resources */,
+				DAC6B5BF202D3D4A00CE289E /* coin_calc_icon.png in Resources */,
 				DA9EF0322021ABC90068E900 /* dash_logo.png in Resources */,
 				DA9EF0342021ABC90068E900 /* BTC_JPY.png in Resources */,
 				DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */,

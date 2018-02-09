@@ -16,6 +16,8 @@ class MarketViewController: UIViewController {
     var bidRates: [Rate]?
     var askRateCell: [MarketPriceCell] = []
     var bidRateCell: [MarketPriceCell] = []
+    var midCell = MarketPriceCell()
+    var midPrice = 0
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,19 +29,21 @@ class MarketViewController: UIViewController {
         initCell()
     }
 
-    private func separateAskAndBid() {
+    private func separateBoard() {
         context = BFCoinManager.shared.context
         for board in context.boards {
             if (board[productCode] != nil) {
-                let matchBoard = board[productCode]
-                askRates = matchBoard?.asks
-                bidRates = matchBoard?.bids
+                if let matchBoard = board[productCode] {
+                    askRates = matchBoard.asks
+                    bidRates = matchBoard.bids
+                    midPrice = matchBoard.midPrice
+                }
             }
         }
     }
     
     private func initCell() {
-        separateAskAndBid()
+        separateBoard()
         if let askRates = askRates {
             for askRate in askRates {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
@@ -48,6 +52,11 @@ class MarketViewController: UIViewController {
                 }
             }
         }
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
+            cell.midPrice = midPrice
+            midCell = cell
+        }
+        
         if let bidRates = bidRates {
             for bidRate in bidRates {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "MarketPriceCell") as? MarketPriceCell {
@@ -59,12 +68,15 @@ class MarketViewController: UIViewController {
     }
     
     private func updateCell() {
-        separateAskAndBid()
+        separateBoard()
         if let askRates = askRates {
             for (index, askRate) in askRates.enumerated() {
                 askRateCell[index].askRate = askRate
             }
         }
+        
+        midCell.midPrice = midPrice
+        
         if let bidRates = bidRates {
             for (index, bidRate) in bidRates.enumerated() {
                 bidRateCell[index].bidRate = bidRate
@@ -77,7 +89,7 @@ class MarketViewController: UIViewController {
 
 extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -85,6 +97,8 @@ extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return askRateCell.count
         case 1:
+            return 1
+        case 2:
             return bidRateCell.count
         default:
             return 0
@@ -96,6 +110,8 @@ extension MarketViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return askRateCell[indexPath.row]
         case 1:
+            return midCell
+        case 2:
             return bidRateCell[indexPath.row]
         default:
             return UITableViewCell()

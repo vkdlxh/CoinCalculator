@@ -20,6 +20,15 @@ class MarketPriceCell: UITableViewCell {
         }
     }
     
+    var midPrice: Int? {
+        didSet {
+            if let midPrice = midPrice {
+                askSizeLabel.text = "Middle Price"
+                priceLabel.text = "\(midPrice)"
+            }
+        }
+    }
+    
     var bidRate: Rate? {
         didSet {
             if let bidRate = bidRate {

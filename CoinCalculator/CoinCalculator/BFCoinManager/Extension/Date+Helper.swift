@@ -51,6 +51,7 @@ extension Date {
     // TEST
     static func stringToString(_ string:String) -> String {
         var newString = string
+        // 違う形式のフォーマットを同じく作る
         if newString.last == "Z" {
             newString.removeLast()
         }
