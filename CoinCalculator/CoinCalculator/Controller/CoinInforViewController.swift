@@ -25,6 +25,12 @@ class CoinInforViewController: UIViewController {
         //Add Observer
         BFCoinManager.shared.addObserver(self)
         updateCoinInfoView()
+        
+        // child chart
+//        if let chartViewController = UIStoryboard(name: "Chart", bundle: nil).instantiateInitialViewController() as? ChartViewController {
+//            self.addContentController(chartViewController)
+//        }
+        
     }
     
     private func updateCoinInfoView() {
@@ -47,14 +53,26 @@ class CoinInforViewController: UIViewController {
         segmentedControl.selectedSegmentIndex = 0
     }
     
+    private func addContentController(_ content:UIViewController) {
+        self.addChildViewController(content)
+        self.view.addSubview(content.view)
+        
+        content.didMove(toParentViewController: self)
+    }
+    
     @objc private func selectionDidChange(_ sender: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             marketView.isHidden = false
             chartView.isHidden = true
+            
+            marketView.didMoveToWindow()
         case 1:
             marketView.isHidden = true
             chartView.isHidden = false
+            
+            chartView.didMoveToWindow()
+            
         default:
             break;
         }
@@ -63,6 +81,10 @@ class CoinInforViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "marketSegue" {
             if let destination = segue.destination as? MarketViewController {
+                destination.productCode = productCode
+            }
+        }else if segue.identifier == "chartSegue" {
+            if let destination = segue.destination as? ChartViewController {
                 destination.productCode = productCode
             }
         }

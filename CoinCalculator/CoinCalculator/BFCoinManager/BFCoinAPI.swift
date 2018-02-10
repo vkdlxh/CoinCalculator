@@ -282,9 +282,13 @@ extension BFCoinAPI {
             headers: BFCoinAPI.CommonHeaders).validate()
     }
     
+    /*
+         Chart APIの説明
+        https://www.cryptocompare.com/api/#introduction
+     */
     static func requestCharts(_ productCode: String, completion: @escaping (ChartData)->Void) -> Void {
 
-        let valueCount = 24*5 //5日
+        let valueCount = 24*3 //3日
         let fsym = String(productCode[..<productCode.index(productCode.startIndex, offsetBy: 3)])
         
         if !(fsym == SupportChartCoin.BTC.rawValue
@@ -294,12 +298,9 @@ extension BFCoinAPI {
                 return
         }
         
-        //https://min-api.cryptocompare.com/data/histohour?fsym=BTC&tsym=JPY&limit=60&aggregate=1&e=BitFlyer
-        let parameterString = "fsym=\(fsym)&tsym=JPY&limit=\(valueCount)&aggregate=1&e=BitFlyer"
-
         
-
-
+        //https://min-api.cryptocompare.com/data/histohour?fsym=BTC&tsym=JPY&limit=60&aggregate=1&e=BitFlyer
+        let parameterString = "fsym=\(fsym)&tsym=JPY&limit=\(valueCount)&aggregate=3&e=BitFlyer"
 
         //１時間足固定
         self.createChrtRequest(url: "/histohour?\(parameterString)").responseJSON { response in

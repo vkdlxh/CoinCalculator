@@ -87,11 +87,12 @@ enum Option {
 
 class ChartViewController: UIViewController, ChartViewDelegate {
     
+    open var productCode : String?
+    
     @IBOutlet var chartView: CandleStickChartView!
     
-    var options: [Option]!
-    
-    var shouldHideData: Bool = false
+    private var options: [Option]!
+    private var shouldHideData: Bool = false
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -111,113 +112,119 @@ class ChartViewController: UIViewController, ChartViewDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.title = "BTC_JPY"
-        self.options = [.toggleValues,
-                        .toggleIcons,
-                        .toggleHighlight,
-                        .animateX,
-                        .animateY,
-                        .animateXY,
-                        .saveToGallery,
-                        .togglePinchZoom,
-                        .toggleAutoScaleMinMax,
-                        .toggleShadowColorSameAsCandle,
-                        .toggleData]
+        self.title = "Chart"
         
-        chartView.delegate = self
-        
-        chartView.chartDescription?.enabled = false
-        
-        chartView.dragEnabled = false
-        chartView.setScaleEnabled(true)
-        chartView.maxVisibleCount = 200
-        chartView.pinchZoomEnabled = true
-        
-        chartView.legend.horizontalAlignment = .right
-        chartView.legend.verticalAlignment = .top
-        chartView.legend.orientation = .vertical
-        chartView.legend.drawInside = false
-        chartView.legend.font = UIFont(name: "HelveticaNeue-Light", size: 10)!
-        
-        chartView.leftAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 10)!
-        chartView.leftAxis.spaceTop = 0.3
-        chartView.leftAxis.spaceBottom = 0.3
-        chartView.leftAxis.axisMinimum = 0
-        
-        chartView.rightAxis.enabled = false
-        
-        chartView.xAxis.labelPosition = .bottom
-        chartView.xAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 10)!
-        
-//        sliderX.value = 10
-//        sliderY.value = 50
-        updateChartData()
-        
-        
-            for set in chartView.data!.dataSets as! [CandleChartDataSet] {
-                set.shadowColorSameAsCandle = !set.shadowColorSameAsCandle
-            }
-            chartView.notifyDataSetChanged()
-        
-        
+        self.initializeChart()
+
     }
     
-    func updateChartData() {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        guard let product_code = self.productCode else {
+            chartView.data = nil
+            return
+        }
+        
+        BFCoinAPI.requestCharts(product_code) { (chartData) in
+            
+            self.updateChartData(chartData)
+            for set in self.chartView.data!.dataSets as! [CandleChartDataSet] {
+                set.shadowColorSameAsCandle = !set.shadowColorSameAsCandle
+            }
+            
+            self.chartView.notifyDataSetChanged()
+        }
+    }
+    
+    func updateChartData(_ data:ChartData) {
+        
         if self.shouldHideData {
             chartView.data = nil
             return
         }
         
-        self.setDataCount(Int(10), range: UInt32(50))
-    }
-    
-    func setDataCount(_ count: Int, range: UInt32) {
-        let yVals1 = (0..<count).map { (i) -> CandleChartDataEntry in
-            let mult = range + 1
-            let val = Double(arc4random_uniform(40) + mult)
-            let high = Double(arc4random_uniform(9) + 8)
-            let low = Double(arc4random_uniform(9) + 8)
-            let open = Double(arc4random_uniform(6) + 1)
-            let close = Double(arc4random_uniform(6) + 1)
-            let even = i % 2 == 0
+        let yVals1 = (0..<data.items.count).map { (i) -> CandleChartDataEntry in
             
-            return CandleChartDataEntry(x: Double(i), shadowH: val + high, shadowL: val - low, open: even ? val + open : val - open, close: even ? val - close : val + close, icon: nil)
+            let chartValue = data.items[i]
+            
+            let high = Double(chartValue.high)
+            let low = Double(chartValue.low)
+            let open = Double(chartValue.open)
+            let close = Double(chartValue.close)
+            
+//            Double(chartValue.time)
+            return CandleChartDataEntry(x: Double(i),
+                                        shadowH: high,
+                                        shadowL: low,
+                                        open: open,
+                                        close: close,
+                                        icon: nil)
         }
         
-        let set1 = CandleChartDataSet(values: yVals1, label: "Data Set")
-        set1.axisDependency = .left
+        let set1 = CandleChartDataSet(values: yVals1, label: nil)
+        set1.axisDependency = .right
         set1.setColor(UIColor(white: 80/255, alpha: 1))
         set1.drawIconsEnabled = false
         set1.shadowColor = .darkGray
         set1.shadowWidth = 0.7
-        set1.decreasingColor = .red
+        set1.decreasingColor = .blue
         set1.decreasingFilled = true
-        set1.increasingColor = UIColor(red: 122/255, green: 242/255, blue: 84/255, alpha: 1)
-        set1.increasingFilled = false
+        set1.increasingColor = .red
+        set1.increasingFilled = true
         set1.neutralColor = .blue
-        
+        set1.drawValuesEnabled = false
         let data = CandleChartData(dataSet: set1)
         chartView.data = data
     }
     
-//    override func optionTapped(_ option: Option) {
-//        if .toggleShadowColorSameAsCandle ~= option {
-//            for set in chartView.data!.dataSets as! [CandleChartDataSet] {
-//                set.shadowColorSameAsCandle = !set.shadowColorSameAsCandle
-//            }
-//            chartView.notifyDataSetChanged()
-//        } else {
-//            super.handleOption(option, forChartView: chartView)
-//        }
-//    }
-//
-//    // MARK: - Actions
-//    @IBAction func slidersValueChanged(_ sender: Any?) {
-//        sliderTextX.text = "\(Int(sliderX.value))"
-//        sliderTextY.text = "\(Int(sliderY.value))"
-//
-//        self.updateChartData()
-//    }
+    //MARK: Private methods
+    private func initializeChart() {
+        
+        self.options = [
+//            .toggleValues,
+            //.toggleIcons,
+            //.toggleHighlight,
+            .animateX,
+            .animateY,
+            .animateXY,
+            //.saveToGallery,
+//            .togglePinchZoom,
+//            .toggleAutoScaleMinMax,
+            //.toggleShadowColorSameAsCandle,
+            //.toggleData
+        ]
+        
+        chartView.delegate = self
+        chartView.chartDescription?.enabled = true
+        chartView.chartDescription?.text = "１時間足"
+        chartView.drawGridBackgroundEnabled = false
+        chartView.dragEnabled = true
+        chartView.setScaleEnabled(true)
+        chartView.maxVisibleCount = 100
+        chartView.pinchZoomEnabled = true
+        
+//        chartView.legend.horizontalAlignment = .right
+//        chartView.legend.verticalAlignment = .top
+//        chartView.legend.orientation = .vertical
+//        chartView.legend.drawInside = false
+//        chartView.legend.font = UIFont(name: "HelveticaNeue-Light", size: 10)!
+        chartView.legend.enabled = false
+        
+        chartView.rightAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 10)!
+        chartView.rightAxis.spaceTop = 0
+        chartView.rightAxis.spaceBottom = 0.5
+        chartView.rightAxis.axisMinimum = 0
+        chartView.leftAxis.enabled = false
+        
+        chartView.xAxis.labelPosition = .bottom
+        chartView.xAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 10)!
+        chartView.xAxis.drawLabelsEnabled = false
+        
+        chartView.xAxis.drawGridLinesEnabled = false
+        chartView.xAxis.gridColor = NSUIColor.gray.withAlphaComponent(0.3)
+
+    }
     
 }
 
