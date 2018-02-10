@@ -14,10 +14,11 @@ class CoinListCell: UITableViewCell {
         didSet {
             // TODO: Cellに値を設定
             if let ticker = ticker {
-                
+                marketNameLabel.text = ticker.productCode?.convertCodeToName()
                 if let productCode = ticker.productCode {
-                    marketNameLabel.text = productCode.convertCodeToName()
-                    logoLabel.image = UIImage(named: productCode)
+                    logoLabel.image = UIImage(named: productCode) ?? UIImage(named: "no_image.png")
+                }else {
+                    logoLabel.image = UIImage(named: "no_image.png")
                 }
                 let bestBid = ticker.bestBid == 0 ? "-" : "\(ticker.bestBid)"
                 bestBidLabel.text = bestBid
@@ -48,5 +49,9 @@ class CoinListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        for v in contentView.subviews {
+            v.backgroundColor = .clear
+        }
     }
 }
