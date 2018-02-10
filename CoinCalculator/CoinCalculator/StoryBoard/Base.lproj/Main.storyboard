@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbi-DU-puS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbi-DU-puS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,112 +31,115 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SRC-zy-OaH">
-                                                    <rect key="frame" x="15" y="15" width="30" height="30"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="SRC-zy-OaH">
+                                                    <rect key="frame" x="8" y="13.5" width="40" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="1dJ-nU-jN6"/>
-                                                        <constraint firstAttribute="width" constant="30" id="cfy-N1-6m1"/>
+                                                        <constraint firstAttribute="height" constant="40" id="1dJ-nU-jN6"/>
+                                                        <constraint firstAttribute="width" constant="40" id="cfy-N1-6m1"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYY-ak-qKU">
-                                                    <rect key="frame" x="55" y="20" width="68.5" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DYY-ak-qKU">
+                                                    <rect key="frame" x="56" y="20" width="120" height="26.5"/>
                                                     <color key="backgroundColor" red="0.092920978479999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <nil key="textColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="fGl-8s-1dq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-MO-ZQG">
-                                                    <rect key="frame" x="138.5" y="10" width="98" height="47"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-MO-ZQG" userLabel="View - bid">
+                                                    <rect key="frame" x="180" y="8" width="89.5" height="52.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bid価格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8O-6P-eYH">
-                                                            <rect key="frame" x="3" y="3" width="92" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bid価格" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b8O-6P-eYH">
+                                                            <rect key="frame" x="0.0" y="0.0" width="89.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bid気配" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-Im-uiO">
-                                                            <rect key="frame" x="3" y="26" width="92" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bid気配" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-Im-uiO">
+                                                            <rect key="frame" x="0.0" y="36.5" width="89.5" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.94328745579999995" green="1" blue="0.3527270066" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstItem="MYl-Im-uiO" firstAttribute="leading" secondItem="c0Y-MO-ZQG" secondAttribute="leading" constant="3" id="30O-8M-F72"/>
-                                                        <constraint firstAttribute="trailing" secondItem="b8O-6P-eYH" secondAttribute="trailing" constant="3" id="8Ze-IR-i2d"/>
-                                                        <constraint firstItem="b8O-6P-eYH" firstAttribute="top" secondItem="c0Y-MO-ZQG" secondAttribute="top" constant="3" id="LcJ-Zn-CpO"/>
-                                                        <constraint firstAttribute="trailing" secondItem="MYl-Im-uiO" secondAttribute="trailing" constant="3" id="N5H-ma-bHl"/>
-                                                        <constraint firstAttribute="bottom" secondItem="MYl-Im-uiO" secondAttribute="bottom" constant="3" id="Rfb-IC-rRG"/>
-                                                        <constraint firstItem="MYl-Im-uiO" firstAttribute="top" secondItem="b8O-6P-eYH" secondAttribute="bottom" constant="5" id="ajV-HS-vHb"/>
-                                                        <constraint firstItem="b8O-6P-eYH" firstAttribute="leading" secondItem="c0Y-MO-ZQG" secondAttribute="leading" constant="3" id="gol-yd-cxT"/>
+                                                        <constraint firstItem="b8O-6P-eYH" firstAttribute="top" secondItem="c0Y-MO-ZQG" secondAttribute="top" id="JMr-ya-Hdz"/>
+                                                        <constraint firstItem="MYl-Im-uiO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="b8O-6P-eYH" secondAttribute="bottom" constant="4" id="ODS-zZ-KH5"/>
+                                                        <constraint firstItem="b8O-6P-eYH" firstAttribute="leading" secondItem="c0Y-MO-ZQG" secondAttribute="leading" id="RKK-mO-yLW"/>
+                                                        <constraint firstAttribute="bottom" secondItem="MYl-Im-uiO" secondAttribute="bottom" id="aF2-ZK-aaQ"/>
+                                                        <constraint firstItem="MYl-Im-uiO" firstAttribute="leading" secondItem="c0Y-MO-ZQG" secondAttribute="leading" id="iDb-ox-EhM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="b8O-6P-eYH" secondAttribute="trailing" id="kiu-HK-nGZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MYl-Im-uiO" secondAttribute="trailing" id="nDb-ZN-ixF"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-mE-NoT">
-                                                    <rect key="frame" x="261.5" y="10" width="98.5" height="47"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-mE-NoT" userLabel="View - ask">
+                                                    <rect key="frame" x="277.5" y="8" width="89.5" height="52.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ask価格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-mQ-clc">
-                                                            <rect key="frame" x="3" y="3" width="92.5" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ask価格" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-mQ-clc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="89.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ask気配" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-CI-4GM">
-                                                            <rect key="frame" x="3" y="26" width="92.5" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ask気配" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-CI-4GM">
+                                                            <rect key="frame" x="0.0" y="36.5" width="89.5" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.94328745579999995" green="1" blue="0.3527270066" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstItem="dGE-mQ-clc" firstAttribute="leading" secondItem="h1t-mE-NoT" secondAttribute="leading" constant="3" id="1jv-mI-0e4"/>
-                                                        <constraint firstAttribute="bottom" secondItem="gLS-CI-4GM" secondAttribute="bottom" constant="3" id="5px-D6-t42"/>
-                                                        <constraint firstItem="gLS-CI-4GM" firstAttribute="top" secondItem="dGE-mQ-clc" secondAttribute="bottom" constant="5" id="FRa-Ei-rJw"/>
-                                                        <constraint firstAttribute="trailing" secondItem="dGE-mQ-clc" secondAttribute="trailing" constant="3" id="Mqd-Fr-Z09"/>
-                                                        <constraint firstAttribute="trailing" secondItem="gLS-CI-4GM" secondAttribute="trailing" constant="3" id="TZJ-kd-0Hv"/>
-                                                        <constraint firstItem="gLS-CI-4GM" firstAttribute="leading" secondItem="h1t-mE-NoT" secondAttribute="leading" constant="3" id="hAy-gX-NUG"/>
-                                                        <constraint firstItem="dGE-mQ-clc" firstAttribute="top" secondItem="h1t-mE-NoT" secondAttribute="top" constant="3" id="kRY-xc-PYr"/>
+                                                        <constraint firstAttribute="trailing" secondItem="dGE-mQ-clc" secondAttribute="trailing" id="3Nx-aV-W0K"/>
+                                                        <constraint firstItem="gLS-CI-4GM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dGE-mQ-clc" secondAttribute="bottom" constant="4" id="4d2-1E-Sqk"/>
+                                                        <constraint firstItem="dGE-mQ-clc" firstAttribute="leading" secondItem="h1t-mE-NoT" secondAttribute="leading" id="G9I-Q9-Sfb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gLS-CI-4GM" secondAttribute="bottom" id="IxR-xt-Bc6"/>
+                                                        <constraint firstItem="dGE-mQ-clc" firstAttribute="top" secondItem="h1t-mE-NoT" secondAttribute="top" id="JWO-2p-FaH"/>
+                                                        <constraint firstItem="gLS-CI-4GM" firstAttribute="leading" secondItem="h1t-mE-NoT" secondAttribute="leading" id="TZY-fw-AE5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gLS-CI-4GM" secondAttribute="trailing" id="ngK-6z-Kbp"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5j-Eu-7ro">
-                                                    <rect key="frame" x="15" y="57" width="355" height="37.5"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5j-Eu-7ro" userLabel="View - bottom label">
+                                                    <rect key="frame" x="15" y="64.5" width="355" height="30"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新時刻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssW-O1-5vZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="18"/>
-                                                            <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新時刻" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssW-O1-5vZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="13.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/02/02 12:30:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-4G-QYY">
-                                                            <rect key="frame" x="0.0" y="19.5" width="136.5" height="18"/>
-                                                            <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/02/02 12:30:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebl-4G-QYY">
+                                                            <rect key="frame" x="0.0" y="14" width="145.5" height="16"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="24時間取引量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ag-AF-bCD">
-                                                            <rect key="frame" x="136.5" y="19" width="95" height="18"/>
-                                                            <color key="backgroundColor" red="1" green="0.497579363" blue="0.57719256149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="24時間取引量" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ag-AF-bCD">
+                                                            <rect key="frame" x="161.5" y="16" width="70" height="13.5"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="xTW-G6-OMJ"/>
+                                                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="xTW-G6-OMJ"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wez-QI-PlA">
-                                                            <rect key="frame" x="236.5" y="19" width="118.5" height="18"/>
-                                                            <color key="backgroundColor" red="0.092920978479999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wez-QI-PlA">
+                                                            <rect key="frame" x="236.5" y="13.5" width="118.5" height="16"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.94939202069999995" green="0.66238188740000004" blue="0.36854845289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="37" id="6gM-7N-JCO"/>
+                                                        <constraint firstItem="7Ag-AF-bCD" firstAttribute="leading" secondItem="Ebl-4G-QYY" secondAttribute="trailing" constant="16" id="4Ut-wH-N81"/>
+                                                        <constraint firstAttribute="height" constant="30" id="6gM-7N-JCO"/>
                                                         <constraint firstAttribute="bottom" secondItem="7Ag-AF-bCD" secondAttribute="bottom" id="8hb-8S-eAN"/>
                                                         <constraint firstAttribute="trailing" secondItem="wez-QI-PlA" secondAttribute="trailing" id="920-zL-KE7"/>
                                                         <constraint firstAttribute="bottom" secondItem="wez-QI-PlA" secondAttribute="bottom" id="BNd-59-Rbq"/>
@@ -146,27 +149,26 @@
                                                         <constraint firstAttribute="bottom" secondItem="Ebl-4G-QYY" secondAttribute="bottom" id="TAc-lt-OGG"/>
                                                         <constraint firstItem="Ebl-4G-QYY" firstAttribute="leading" secondItem="X5j-Eu-7ro" secondAttribute="leading" id="YFY-Cz-a1M"/>
                                                         <constraint firstItem="ssW-O1-5vZ" firstAttribute="leading" secondItem="X5j-Eu-7ro" secondAttribute="leading" id="b7A-Ib-Uao"/>
-                                                        <constraint firstItem="7Ag-AF-bCD" firstAttribute="leading" secondItem="Ebl-4G-QYY" secondAttribute="trailing" id="dny-j0-3z8"/>
                                                         <constraint firstItem="ssW-O1-5vZ" firstAttribute="top" secondItem="X5j-Eu-7ro" secondAttribute="top" id="efm-xZ-dSI"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="X5j-Eu-7ro" firstAttribute="top" secondItem="h1t-mE-NoT" secondAttribute="bottom" constant="4" id="1w9-X8-xIN"/>
+                                                <constraint firstItem="c0Y-MO-ZQG" firstAttribute="top" secondItem="HhN-Ic-HjN" secondAttribute="top" constant="8" id="1z8-dp-aHD"/>
                                                 <constraint firstAttribute="bottom" secondItem="X5j-Eu-7ro" secondAttribute="bottom" constant="5" id="4cD-dC-AAh"/>
                                                 <constraint firstAttribute="trailing" secondItem="X5j-Eu-7ro" secondAttribute="trailing" constant="5" id="50M-Wg-5RO"/>
-                                                <constraint firstItem="c0Y-MO-ZQG" firstAttribute="top" secondItem="HhN-Ic-HjN" secondAttribute="top" constant="10" id="5bF-xi-b8l"/>
-                                                <constraint firstAttribute="trailing" secondItem="h1t-mE-NoT" secondAttribute="trailing" constant="15" id="95k-IT-zgq"/>
-                                                <constraint firstItem="h1t-mE-NoT" firstAttribute="leading" secondItem="c0Y-MO-ZQG" secondAttribute="trailing" constant="25" id="APH-iI-dMA"/>
                                                 <constraint firstItem="DYY-ak-qKU" firstAttribute="top" secondItem="HhN-Ic-HjN" secondAttribute="top" constant="20" id="Crw-8q-JEk"/>
-                                                <constraint firstItem="DYY-ak-qKU" firstAttribute="leading" secondItem="SRC-zy-OaH" secondAttribute="trailing" constant="10" id="MG3-Tt-bkU"/>
-                                                <constraint firstItem="h1t-mE-NoT" firstAttribute="top" secondItem="HhN-Ic-HjN" secondAttribute="top" constant="10" id="Pnb-LU-qj3"/>
+                                                <constraint firstItem="h1t-mE-NoT" firstAttribute="width" secondItem="c0Y-MO-ZQG" secondAttribute="width" id="L60-7s-TtQ"/>
+                                                <constraint firstItem="DYY-ak-qKU" firstAttribute="leading" secondItem="SRC-zy-OaH" secondAttribute="trailing" constant="8" id="MG3-Tt-bkU"/>
                                                 <constraint firstItem="X5j-Eu-7ro" firstAttribute="leading" secondItem="HhN-Ic-HjN" secondAttribute="leading" constant="15" id="Pvy-cD-vCZ"/>
-                                                <constraint firstItem="SRC-zy-OaH" firstAttribute="leading" secondItem="HhN-Ic-HjN" secondAttribute="leading" constant="15" id="avu-Jd-T37"/>
-                                                <constraint firstItem="c0Y-MO-ZQG" firstAttribute="centerX" secondItem="HhN-Ic-HjN" secondAttribute="centerX" id="cdl-y7-yfK"/>
-                                                <constraint firstItem="X5j-Eu-7ro" firstAttribute="top" secondItem="c0Y-MO-ZQG" secondAttribute="bottom" id="d0F-lE-qUl"/>
-                                                <constraint firstItem="c0Y-MO-ZQG" firstAttribute="width" secondItem="h1t-mE-NoT" secondAttribute="width" id="l0g-nl-G4s"/>
-                                                <constraint firstItem="c0Y-MO-ZQG" firstAttribute="leading" secondItem="DYY-ak-qKU" secondAttribute="trailing" constant="15" id="ufy-Ix-BHV"/>
-                                                <constraint firstItem="SRC-zy-OaH" firstAttribute="top" secondItem="HhN-Ic-HjN" secondAttribute="top" constant="15" id="yUG-Mv-UiQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="h1t-mE-NoT" secondAttribute="trailing" constant="8" id="QO6-cE-SXP"/>
+                                                <constraint firstItem="DYY-ak-qKU" firstAttribute="centerY" secondItem="SRC-zy-OaH" secondAttribute="centerY" id="SYd-Hv-IQT"/>
+                                                <constraint firstItem="h1t-mE-NoT" firstAttribute="leading" secondItem="c0Y-MO-ZQG" secondAttribute="trailing" constant="8" id="VSN-tT-jzY"/>
+                                                <constraint firstItem="X5j-Eu-7ro" firstAttribute="top" secondItem="c0Y-MO-ZQG" secondAttribute="bottom" constant="4" id="ZJM-OQ-R4d"/>
+                                                <constraint firstItem="SRC-zy-OaH" firstAttribute="leading" secondItem="HhN-Ic-HjN" secondAttribute="leading" constant="8" id="avu-Jd-T37"/>
+                                                <constraint firstItem="h1t-mE-NoT" firstAttribute="top" secondItem="HhN-Ic-HjN" secondAttribute="top" constant="8" id="lXT-Hv-X6h"/>
+                                                <constraint firstItem="c0Y-MO-ZQG" firstAttribute="leading" secondItem="DYY-ak-qKU" secondAttribute="trailing" constant="4" id="mDE-P5-fvm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -186,51 +188,71 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="8J7-dj-SVW"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqC-f2-7ig">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqC-f2-7ig" userLabel="View - calc top">
                                 <rect key="frame" x="0.0" y="347" width="375" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-mB-d3C">
-                                        <rect key="frame" x="10" y="5" width="320" height="30"/>
-                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dF-o2-6UW" userLabel="View - line">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Hfx-Rs-tQR"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-mB-d3C">
+                                        <rect key="frame" x="16" y="5" width="311" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q5-iR-clc">
-                                        <rect key="frame" x="335" y="5" width="30" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrq-FO-4Kr" userLabel="View - line">
+                                        <rect key="frame" x="16" y="35" width="311" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="a5d-Fr-3Y7"/>
-                                            <constraint firstAttribute="width" constant="30" id="fqO-iO-ab6"/>
+                                            <constraint firstAttribute="height" constant="1" id="ZqP-Rn-OI9"/>
                                         </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q5-iR-clc">
+                                        <rect key="frame" x="343" y="8" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="a5d-Fr-3Y7"/>
+                                            <constraint firstAttribute="width" constant="24" id="fqO-iO-ab6"/>
+                                        </constraints>
+                                        <state key="normal" image="calc_icon.png"/>
                                         <connections>
                                             <action selector="showCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1o-kz-ZR0"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="VnE-mB-d3C" secondAttribute="bottom" constant="5" id="6D3-w6-W7G"/>
-                                    <constraint firstItem="VnE-mB-d3C" firstAttribute="leading" secondItem="JqC-f2-7ig" secondAttribute="leading" constant="10" id="Fko-Kl-wFb"/>
+                                    <constraint firstItem="0dF-o2-6UW" firstAttribute="top" secondItem="JqC-f2-7ig" secondAttribute="top" id="7Lr-Vv-wPh"/>
+                                    <constraint firstAttribute="trailing" secondItem="0dF-o2-6UW" secondAttribute="trailing" id="8re-bE-x7S"/>
+                                    <constraint firstItem="VnE-mB-d3C" firstAttribute="leading" secondItem="JqC-f2-7ig" secondAttribute="leading" constant="16" id="Fko-Kl-wFb"/>
+                                    <constraint firstItem="vrq-FO-4Kr" firstAttribute="leading" secondItem="JqC-f2-7ig" secondAttribute="leading" constant="16" id="ZhX-UL-nZT"/>
                                     <constraint firstItem="VnE-mB-d3C" firstAttribute="top" secondItem="JqC-f2-7ig" secondAttribute="top" constant="5" id="cJK-Zo-eor"/>
-                                    <constraint firstAttribute="trailing" secondItem="2Q5-iR-clc" secondAttribute="trailing" constant="10" id="cVn-k5-N0n"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Q5-iR-clc" secondAttribute="trailing" constant="8" id="cVn-k5-N0n"/>
                                     <constraint firstAttribute="height" constant="40" id="cvZ-EW-X7W"/>
-                                    <constraint firstItem="2Q5-iR-clc" firstAttribute="leading" secondItem="VnE-mB-d3C" secondAttribute="trailing" constant="5" id="sBD-uu-6ML"/>
+                                    <constraint firstItem="0dF-o2-6UW" firstAttribute="leading" secondItem="JqC-f2-7ig" secondAttribute="leading" id="dGk-z8-wLi"/>
+                                    <constraint firstItem="vrq-FO-4Kr" firstAttribute="top" secondItem="VnE-mB-d3C" secondAttribute="bottom" id="hAA-XF-1Nh"/>
+                                    <constraint firstItem="2Q5-iR-clc" firstAttribute="leading" secondItem="VnE-mB-d3C" secondAttribute="trailing" constant="16" id="sBD-uu-6ML"/>
                                     <constraint firstItem="2Q5-iR-clc" firstAttribute="centerY" secondItem="JqC-f2-7ig" secondAttribute="centerY" id="syM-Fi-5IO"/>
+                                    <constraint firstItem="vrq-FO-4Kr" firstAttribute="width" secondItem="VnE-mB-d3C" secondAttribute="width" id="zsR-IJ-lAR"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAa-p2-3Bm">
                                 <rect key="frame" x="0.0" y="387" width="375" height="280"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-uh-s86">
-                                        <rect key="frame" x="0.0" y="50" width="375" height="230"/>
+                                        <rect key="frame" x="0.0" y="54" width="375" height="226"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E60-Et-9aW">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="45.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9P-Ps-1VN" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="281.5" height="46"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="281.5" height="45.5"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="AC">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -242,8 +264,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpr-P5-RNv" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45.5"/>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="÷">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -257,11 +280,12 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-dW-wOg">
-                                                <rect key="frame" x="0.0" y="46" width="375" height="46"/>
+                                                <rect key="frame" x="0.0" y="45.5" width="375" height="45"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkF-l6-EEh" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="46"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="7">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -274,8 +298,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dey-gA-4AK" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="8">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -287,8 +312,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLC-wO-MgA" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="46"/>
+                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="9">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -300,8 +326,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLf-bv-ziQ" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45"/>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="×">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -320,11 +347,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-u4-bR9">
-                                                <rect key="frame" x="0.0" y="92" width="375" height="46"/>
+                                                <rect key="frame" x="0.0" y="90.5" width="375" height="45"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB3-R9-ngz" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="46"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="4">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -336,8 +364,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQy-Mg-5F0" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="5">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -349,8 +378,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-wT-fqM" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="46"/>
+                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="6">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -362,8 +392,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tn-ul-CuC" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45"/>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -382,11 +413,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-sG-YcA">
-                                                <rect key="frame" x="0.0" y="138" width="375" height="46"/>
+                                                <rect key="frame" x="0.0" y="135.5" width="375" height="45"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-FQ-fyy" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="46"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -398,8 +430,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP0-UC-ctk" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -411,8 +444,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUi-aw-Sew" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="46"/>
+                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="45"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -424,8 +458,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-bK-x6G" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45"/>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -444,11 +479,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-LL-bmG">
-                                                <rect key="frame" x="0.0" y="184" width="375" height="46"/>
+                                                <rect key="frame" x="0.0" y="180.5" width="375" height="45.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haB-iT-138" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="46"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haB-iT-138" userLabel="지난해" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="45.5"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -460,8 +496,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="899-bW-64N" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="188" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="188" y="0.0" width="93.5" height="45.5"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -473,8 +510,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iln-os-t4p" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="46"/>
+                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45.5"/>
                                                         <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -500,26 +538,32 @@
                                             <constraint firstItem="gKW-dW-wOg" firstAttribute="height" secondItem="E60-Et-9aW" secondAttribute="height" id="yn7-2L-HTx"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-3W-gM8">
-                                        <rect key="frame" x="10" y="10" width="355" height="30"/>
-                                        <color key="backgroundColor" red="0.092920978479999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-3W-gM8">
+                                        <rect key="frame" x="32" y="10" width="311" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="UVO-8c-Yhu"/>
+                                            <constraint firstAttribute="height" constant="34" id="UVO-8c-Yhu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="7c4-TF-rNA"/>
                                     <constraint firstItem="MfZ-3W-gM8" firstAttribute="top" secondItem="EAa-p2-3Bm" secondAttribute="top" constant="10" id="9tJ-01-nsn"/>
                                     <constraint firstItem="FWv-uh-s86" firstAttribute="leading" secondItem="EAa-p2-3Bm" secondAttribute="leading" id="JGE-Lq-HkP"/>
                                     <constraint firstAttribute="trailing" secondItem="FWv-uh-s86" secondAttribute="trailing" id="c96-IA-3gP"/>
                                     <constraint firstItem="FWv-uh-s86" firstAttribute="top" secondItem="MfZ-3W-gM8" secondAttribute="bottom" constant="10" id="d33-fZ-f2w"/>
-                                    <constraint firstAttribute="trailing" secondItem="MfZ-3W-gM8" secondAttribute="trailing" constant="10" id="gpn-YH-LOd"/>
-                                    <constraint firstItem="MfZ-3W-gM8" firstAttribute="leading" secondItem="EAa-p2-3Bm" secondAttribute="leading" constant="10" id="k5o-YN-Wwy"/>
+                                    <constraint firstAttribute="trailing" secondItem="MfZ-3W-gM8" secondAttribute="trailing" constant="32" id="gpn-YH-LOd"/>
+                                    <constraint firstItem="MfZ-3W-gM8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="EAa-p2-3Bm" secondAttribute="leading" constant="32" id="k5o-YN-Wwy"/>
                                     <constraint firstAttribute="bottom" secondItem="FWv-uh-s86" secondAttribute="bottom" id="mUN-xW-eKV"/>
                                 </constraints>
                             </view>
@@ -903,4 +947,8 @@
             <point key="canvasLocation" x="2302" y="368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calc_icon.png" width="256" height="256"/>
+        <image name="no_image.png" width="191" height="191"/>
+    </resources>
 </document>

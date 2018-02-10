@@ -135,7 +135,7 @@ class MainViewController: UIViewController {
     
     private func initCalculator() {
         outputLabel.text = "0"
-        showCalculatorButton.setTitle("△", for: .normal)
+        showCalculatorButton.setImage(UIImage(named:"calc_icon.png"), for: .normal)
         calculatorView.isHidden = true
         calculatorHeight.constant = 0
     }
@@ -188,6 +188,10 @@ class MainViewController: UIViewController {
 
 // MARK: Extensions
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cells.count
     }

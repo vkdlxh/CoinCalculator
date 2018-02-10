@@ -16,7 +16,9 @@ class CoinListCell: UITableViewCell {
             if let ticker = ticker {
                 marketNameLabel.text = ticker.productCode
                 if let productCode = ticker.productCode {
-                   logoLabel.image = UIImage(named: productCode)
+                    logoLabel.image = UIImage(named: productCode) ?? UIImage(named: "no_image.png")
+                }else {
+                    logoLabel.image = UIImage(named: "no_image.png")
                 }
                 bestBidLabel.text = "\(ticker.bestBid)"
                 bestBidSizeLabel.text = "\(ticker.bestBidSize)"
@@ -43,6 +45,10 @@ class CoinListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        for v in contentView.subviews {
+            v.backgroundColor = .clear
+        }
     }
 
 }
