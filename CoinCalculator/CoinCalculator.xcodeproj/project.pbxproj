@@ -34,6 +34,10 @@
 		DAA13C5D20219D430061FCE0 /* CoinCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */; };
 		DAA5ABCB202D9F5B00FC1B2A /* String+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5ABCA202D9F5B00FC1B2A /* String+Converter.swift */; };
 		DAA5ABCF2032D6D100FC1B2A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABCE2032D6D100FC1B2A /* Settings.bundle */; };
+		DAA5ABD52033246900FC1B2A /* Calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD12033246800FC1B2A /* Calculator.png */; };
+		DAA5ABD62033246900FC1B2A /* PriceView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD22033246800FC1B2A /* PriceView.png */; };
+		DAA5ABD72033246900FC1B2A /* RateView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD32033246900FC1B2A /* RateView.png */; };
+		DAA5ABD82033246900FC1B2A /* ChartView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD42033246900FC1B2A /* ChartView.png */; };
 		DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55420285B1900CE289E /* MarketViewController.swift */; };
 		DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55620285B2D00CE289E /* ChartViewController.swift */; };
 		DAC6B55920286E4200CE289E /* MarketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55820286E4200CE289E /* MarketPriceCell.swift */; };
@@ -114,6 +118,10 @@
 		DAA13C5E20219D430061FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA5ABCA202D9F5B00FC1B2A /* String+Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Converter.swift"; sourceTree = "<group>"; };
 		DAA5ABCE2032D6D100FC1B2A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		DAA5ABD12033246800FC1B2A /* Calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calculator.png; sourceTree = "<group>"; };
+		DAA5ABD22033246800FC1B2A /* PriceView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PriceView.png; sourceTree = "<group>"; };
+		DAA5ABD32033246900FC1B2A /* RateView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RateView.png; sourceTree = "<group>"; };
+		DAA5ABD42033246900FC1B2A /* ChartView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChartView.png; sourceTree = "<group>"; };
 		DAC6B55420285B1900CE289E /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		DAC6B55620285B2D00CE289E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		DAC6B55820286E4200CE289E /* MarketPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceCell.swift; sourceTree = "<group>"; };
@@ -191,6 +199,7 @@
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DAA5ABD0203323E600FC1B2A /* ScreenShots */,
 				40ADF62B202EE1C000C402A9 /* calc_icon.png */,
 				40124FAB202ED9F3001423C9 /* no_image.png */,
 				DAC6B5BE202D3D4800CE289E /* coin_calc_icon.png */,
@@ -295,6 +304,17 @@
 				DAC6B55820286E4200CE289E /* MarketPriceCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DAA5ABD0203323E600FC1B2A /* ScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+				DAA5ABD12033246800FC1B2A /* Calculator.png */,
+				DAA5ABD42033246900FC1B2A /* ChartView.png */,
+				DAA5ABD22033246800FC1B2A /* PriceView.png */,
+				DAA5ABD32033246900FC1B2A /* RateView.png */,
+			);
+			path = ScreenShots;
 			sourceTree = "<group>";
 		};
 		DAC6B59A20295FA400CE289E /* BFCoinManager */ = {
@@ -461,12 +481,16 @@
 			files = (
 				DA9EF0312021ABC90068E900 /* zcash_logo.png in Resources */,
 				DAA5ABCF2032D6D100FC1B2A /* Settings.bundle in Resources */,
+				DAA5ABD62033246900FC1B2A /* PriceView.png in Resources */,
 				DAA13C4720219D430061FCE0 /* LaunchScreen.storyboard in Resources */,
+				DAA5ABD52033246900FC1B2A /* Calculator.png in Resources */,
+				DAA5ABD82033246900FC1B2A /* ChartView.png in Resources */,
 				DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */,
 				DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */,
 				DAC6B5C1202D4F4700CE289E /* splash.png in Resources */,
 				40124FAA202ED49B001423C9 /* splash_icon.png in Resources */,
 				DAC6B5BF202D3D4A00CE289E /* coin_calc_icon.png in Resources */,
+				DAA5ABD72033246900FC1B2A /* RateView.png in Resources */,
 				DA9EF0322021ABC90068E900 /* dash_logo.png in Resources */,
 				DA9EF0342021ABC90068E900 /* BTC_JPY.png in Resources */,
 				DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */,
