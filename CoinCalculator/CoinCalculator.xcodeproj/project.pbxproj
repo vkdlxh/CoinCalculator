@@ -33,6 +33,7 @@
 		DAA13C5220219D430061FCE0 /* CoinCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5120219D430061FCE0 /* CoinCalculatorTests.swift */; };
 		DAA13C5D20219D430061FCE0 /* CoinCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */; };
 		DAA5ABCB202D9F5B00FC1B2A /* String+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5ABCA202D9F5B00FC1B2A /* String+Converter.swift */; };
+		DAA5ABCF2032D6D100FC1B2A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABCE2032D6D100FC1B2A /* Settings.bundle */; };
 		DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55420285B1900CE289E /* MarketViewController.swift */; };
 		DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55620285B2D00CE289E /* ChartViewController.swift */; };
 		DAC6B55920286E4200CE289E /* MarketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55820286E4200CE289E /* MarketPriceCell.swift */; };
@@ -112,6 +113,7 @@
 		DAA13C5C20219D430061FCE0 /* CoinCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCalculatorUITests.swift; sourceTree = "<group>"; };
 		DAA13C5E20219D430061FCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA5ABCA202D9F5B00FC1B2A /* String+Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Converter.swift"; sourceTree = "<group>"; };
+		DAA5ABCE2032D6D100FC1B2A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		DAC6B55420285B1900CE289E /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		DAC6B55620285B2D00CE289E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		DAC6B55820286E4200CE289E /* MarketPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceCell.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				DAA13C3C20219D420061FCE0 /* AppDelegate.swift */,
 				DAA13C4320219D430061FCE0 /* Assets.xcassets */,
 				DAA13C4520219D430061FCE0 /* LaunchScreen.storyboard */,
+				DAA5ABCE2032D6D100FC1B2A /* Settings.bundle */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9EF0312021ABC90068E900 /* zcash_logo.png in Resources */,
+				DAA5ABCF2032D6D100FC1B2A /* Settings.bundle in Resources */,
 				DAA13C4720219D430061FCE0 /* LaunchScreen.storyboard in Resources */,
 				DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */,
 				DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */,
