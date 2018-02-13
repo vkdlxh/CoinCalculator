@@ -589,11 +589,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -831,6 +833,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
 				INFOPLIST_FILE = CoinCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -847,6 +850,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
 				INFOPLIST_FILE = CoinCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -864,6 +868,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
 				INFOPLIST_FILE = CoinCalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -882,6 +887,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
 				INFOPLIST_FILE = CoinCalculatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -899,6 +905,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
 				INFOPLIST_FILE = CoinCalculatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -916,6 +923,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8RKPBJ3Y3;
 				INFOPLIST_FILE = CoinCalculatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.archive-asia.CoinCalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
