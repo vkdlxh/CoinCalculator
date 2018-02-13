@@ -14,14 +14,19 @@ class CoinListCell: UITableViewCell {
         didSet {
             // TODO: Cellに値を設定
             if let ticker = ticker {
-                marketNameLabel.text = ticker.productCode
+                
                 if let productCode = ticker.productCode {
-                   logoLabel.image = UIImage(named: productCode)
+                    marketNameLabel.text = productCode.convertCodeToName()
+                    logoLabel.image = UIImage(named: productCode)
                 }
-                bestBidLabel.text = "\(ticker.bestBid)"
-                bestBidSizeLabel.text = "\(ticker.bestBidSize)"
-                bestAskLabel.text = "\(ticker.bestAsk)"
-                bestAskSizeLabel.text = "\(ticker.bestAskSize)"
+                let bestBid = ticker.bestBid == 0 ? "-" : "\(ticker.bestBid)"
+                bestBidLabel.text = bestBid
+                let bestBidSize = ticker.bestBidSize == 0 ? "-" : "\(ticker.bestBidSize)"
+                bestBidSizeLabel.text = bestBidSize
+                let bestAsk = ticker.bestAsk == 0 ? "-" : "\(ticker.bestAsk)"
+                bestAskLabel.text = bestAsk
+                let bestAskSize = ticker.bestAskSize == 0 ? "-" : "\(ticker.bestAskSize)"
+                bestAskSizeLabel.text = bestAskSize
                 if let timestamp = ticker.timestamp {
                     timestampLabel.text = "\(timestamp)"
                 }
@@ -44,5 +49,4 @@ class CoinListCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
 }

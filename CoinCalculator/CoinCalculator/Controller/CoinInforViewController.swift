@@ -19,7 +19,7 @@ class CoinInforViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = productCode
+        navigationItem.title = productCode.convertCodeToName()
         
         setupSegmentedControl()
         //Add Observer
