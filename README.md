@@ -15,6 +15,13 @@
 4. Open `CoinCalculator.xcworkspace` in Xcode 9.0 or higher.
 
 ## Screenshots
+  <img src="https://github.com/vkdlxh/CoinCalculator/raw/master/CoinCalculator/CoinCalculator/Supporting%20Files/images/ScreenShots/RateView.png" width="250"> <span>     </span>
+<img src="https://github.com/vkdlxh/CoinCalculator/raw/master/CoinCalculator/CoinCalculator/Supporting%20Files/images/ScreenShots/Calculator.png" width="250">
+   <BR>
+  <img src="https://github.com/vkdlxh/CoinCalculator/raw/master/CoinCalculator/CoinCalculator/Supporting%20Files/images/ScreenShots/PriceView.png" width="250">
+    <img src="https://github.com/vkdlxh/CoinCalculator/raw/master/CoinCalculator/CoinCalculator/Supporting%20Files/images/ScreenShots/ChartView.png" width="250">
+   <BR>
+
 
 ## License
 
