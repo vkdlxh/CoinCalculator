@@ -21,3 +21,10 @@ target 'CoinCalculator' do
   end
 
 end
+
+post_install do | installer |
+  require 'fileutils'
+
+  FileUtils.cp_r('Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-acknowledgements.plist', 'CoinCalculator/Supporting Files/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+
+end
