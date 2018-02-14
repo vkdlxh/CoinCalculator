@@ -16,6 +16,8 @@ class CoinInforViewController: UIViewController {
     @IBOutlet weak var marketView: UIView!
     @IBOutlet weak var chartView: UIView!
     @IBOutlet weak var coinInfoView: CoinInfoView!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var calculatorBarView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +28,48 @@ class CoinInforViewController: UIViewController {
         BFCoinManager.shared.addObserver(self)
         updateCoinInfoView()
         
+
+        
         // child chart
 //        if let chartViewController = UIStoryboard(name: "Chart", bundle: nil).instantiateInitialViewController() as? ChartViewController {
 //            self.addContentController(chartViewController)
 //        }
+//        calculatorBarView.translatesAutoresizingMaskIntoConstraints = false
+        registerKeyboardNotifications()
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        deRegisterKeyboardNotifications()
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    private func registerKeyboardNotifications() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(handelKeyboardNotification), name: .UIKeyboardWillShow, object: nil)
+        
+        notificationCenter.addObserver(self, selector: #selector(handelKeyboardNotification), name: .UIKeyboardWillHide, object: nil)
+    }
+    private func deRegisterKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardDidHide, object: nil)
+    }
+    
+    @objc private func handelKeyboardNotification(_ notification: Notification) {
+        let userInfo = (notification as NSNotification).userInfo!
+        let keyboardHeight =  (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        
+        let isKeyboardShowing = notification.name == .UIKeyboardWillShow
+        
+        bottomConstraint?.constant = isKeyboardShowing ? -keyboardHeight.height : 0
+        
+        UIView.animate(withDuration: 0, delay: 0, options: .curveEaseOut, animations: {
+            self.view.layoutIfNeeded()
+        })
         
     }
     
