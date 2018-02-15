@@ -754,7 +754,7 @@
                                     <outlet property="timestampLabel" destination="6b0-dH-K1k" id="56x-nz-mPR"/>
                                 </connections>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haY-Mf-cc4" userLabel="Calculator Bar View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haY-Mf-cc4" userLabel="Calculator Bar View" customClass="CalculatorBarView" customModule="CoinCalculator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCl-Cm-OSK" userLabel="View - line">
@@ -771,6 +771,9 @@
                                             <constraint firstAttribute="height" constant="24" id="sgX-gH-Hi6"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="calc_icon.png"/>
+                                        <connections>
+                                            <action selector="exchangeAction:" destination="haY-Mf-cc4" eventType="touchUpInside" id="ydK-Vx-Yav"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y77-Ia-WKf">
                                         <rect key="frame" x="10" y="9.5" width="138.5" height="21"/>
@@ -793,7 +796,7 @@
                                         <rect key="frame" x="189.5" y="5" width="138.5" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96471244096755981" green="0.9646943211555481" blue="0.96470659971237183" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -813,6 +816,10 @@
                                     <constraint firstItem="y77-Ia-WKf" firstAttribute="centerY" secondItem="haY-Mf-cc4" secondAttribute="centerY" id="n0Q-OR-reX"/>
                                     <constraint firstAttribute="trailing" secondItem="hCl-Cm-OSK" secondAttribute="trailing" id="nPk-58-IAJ"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="coinValueLabel" destination="y77-Ia-WKf" id="xHo-zn-5yw"/>
+                                    <outlet property="jpyValueTextField" destination="x0S-aT-1vZ" id="OSu-Vx-TGm"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -38,6 +38,7 @@
 		DAA5ABD62033246900FC1B2A /* PriceView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD22033246800FC1B2A /* PriceView.png */; };
 		DAA5ABD72033246900FC1B2A /* RateView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD32033246900FC1B2A /* RateView.png */; };
 		DAA5ABD82033246900FC1B2A /* ChartView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD42033246900FC1B2A /* ChartView.png */; };
+		DAA5ABDC2034234C00FC1B2A /* CalculatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */; };
 		DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55420285B1900CE289E /* MarketViewController.swift */; };
 		DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55620285B2D00CE289E /* ChartViewController.swift */; };
 		DAC6B55920286E4200CE289E /* MarketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55820286E4200CE289E /* MarketPriceCell.swift */; };
@@ -122,6 +123,7 @@
 		DAA5ABD22033246800FC1B2A /* PriceView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PriceView.png; sourceTree = "<group>"; };
 		DAA5ABD32033246900FC1B2A /* RateView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RateView.png; sourceTree = "<group>"; };
 		DAA5ABD42033246900FC1B2A /* ChartView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChartView.png; sourceTree = "<group>"; };
+		DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBarView.swift; sourceTree = "<group>"; };
 		DAC6B55420285B1900CE289E /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		DAC6B55620285B2D00CE289E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		DAC6B55820286E4200CE289E /* MarketPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceCell.swift; sourceTree = "<group>"; };
@@ -297,8 +299,9 @@
 			children = (
 				DAC6B5B92029733D00CE289E /* Chart */,
 				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
-				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
 				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
+				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
+				DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */,
 				DAC6B5BC202C214500CE289E /* CoinInfoView.swift */,
 				DAC6B55420285B1900CE289E /* MarketViewController.swift */,
 				DAC6B55820286E4200CE289E /* MarketPriceCell.swift */,
@@ -703,6 +706,7 @@
 				DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */,
 				DAC6B5B220295FA400CE289E /* Health.swift in Sources */,
 				DAC6B5AF20295FA400CE289E /* AppDelegate+RealtimeAPI.swift in Sources */,
+				DAA5ABDC2034234C00FC1B2A /* CalculatorBarView.swift in Sources */,
 				DAC6B5AE20295FA400CE289E /* BFContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
