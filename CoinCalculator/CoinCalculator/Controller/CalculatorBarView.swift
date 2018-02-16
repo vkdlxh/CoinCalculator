@@ -10,6 +10,10 @@ import UIKit
 
 class CalculatorBarView: UIView {
     
+    var coinName = ""
+    var ltp: Int = 0
+    var isExchangeOfYenForCoin = false
+    
     var ticker: Ticker? {
         didSet {
             if let ticker = ticker {
@@ -18,29 +22,15 @@ class CalculatorBarView: UIView {
                 }
                 self.ltp = ticker.ltp
             }
-            
         }
     }
-    var coinName = ""
-    var ltp: Int = 0
-    var isExchangeOfYenForCoin = false
-    
-//    var isKeyboardShowingByTappingView = false
     
     @IBOutlet weak var currentExchangeModeLabel: UILabel!
     @IBOutlet weak var exchangedResultLabel: UILabel!
     @IBOutlet weak var inputValueTextField: UITextField!
     
-    @IBAction func switchExchangeMode(_ sender: UIButton) {
-        if isExchangeOfYenForCoin { // BTC -> JPY
-            currentExchangeModeLabel.text = "\(coinName) → JPY"
-            exchangedResultLabel.text = "JPY"
-            isExchangeOfYenForCoin = false
-        } else {                    // JPY -> BTC
-            currentExchangeModeLabel.text = "JPY → \(coinName)"
-            exchangedResultLabel.text = "\(coinName)"
-            isExchangeOfYenForCoin = true
-        }
+    @IBAction func switchExchangeAction(_ sender: UIButton) {
+        switchExchangeMode()
     }
     
     @IBAction func exchangeAction(_ sender: UIButton) {
@@ -76,13 +66,25 @@ class CalculatorBarView: UIView {
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         // Drawing code
+        switchExchangeMode()
+        
+        exchangedResultLabel.layer.masksToBounds = true
+        exchangedResultLabel.layer.cornerRadius = 5
+        exchangedResultLabel.layer.borderColor = UIColor.lightGray.cgColor
+        exchangedResultLabel.layer.borderWidth = 1
+        
+    }
+    
+    private func switchExchangeMode() {
         if isExchangeOfYenForCoin { // BTC -> JPY
             currentExchangeModeLabel.text = "\(coinName) → JPY"
             exchangedResultLabel.text = "JPY"
+            inputValueTextField.placeholder = "\(coinName)"
             isExchangeOfYenForCoin = false
         } else {                    // JPY -> BTC
             currentExchangeModeLabel.text = "JPY → \(coinName)"
             exchangedResultLabel.text = "\(coinName)"
+            inputValueTextField.placeholder = "JPY"
             isExchangeOfYenForCoin = true
         }
     }

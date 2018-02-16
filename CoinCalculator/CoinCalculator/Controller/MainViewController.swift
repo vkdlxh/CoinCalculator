@@ -8,13 +8,6 @@
 
 import UIKit
 
-enum Operation: String {
-    case Add = "+"
-    case Subtract = "-"
-    case Multiply = "*"
-    case Divide = "/"
-    case NULL = "Null"
-}
 
 class MainViewController: UIViewController {
     
@@ -23,88 +16,16 @@ class MainViewController: UIViewController {
     var tickers: [Ticker] = []
     var cells: [CoinListCell] = []
     
-    // Calculator
-    var isCalculatorHide: Bool = true
-    var currentValue = ""
-    var leftValue = ""
-    var rightValue = ""
-    var result = ""
-    var currentOperation: Operation = .NULL
-    
     // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var outputLabel: UILabel!
-    @IBOutlet weak var calculatorView: UIView!
-    @IBOutlet weak var showCalculatorButton: UIButton!
-    @IBOutlet weak var calculatorHeight: NSLayoutConstraint!
-    
-    // MARK: IBAction
-    @IBAction func numberPressed(_ sender: CalculatorButton) {
-        currentValue += "\(sender.tag)"
-        outputLabel.text = currentValue
-    }
-    
-    @IBAction func allClearPressed(_ sender: CalculatorButton) {
-        currentValue = ""
-        leftValue = ""
-        rightValue = ""
-        result = ""
-        currentOperation = .NULL
-        outputLabel.text = "0"
-    }
-    @IBAction func dotPressed(_ sender: CalculatorButton) {
-         if outputLabel.text == "0" {
-            currentValue = "0."
-        } else if outputLabel.text?.range(of: ".") == nil {
-            currentValue += "."
-        }
-        outputLabel.text = currentValue
-        
-    }
-    @IBAction func equalPressed(_ sender: CalculatorButton) {
-        operation(opertaion: currentOperation)
-    }
-    @IBAction func addPressed(_ sender: CalculatorButton) {
-        operation(opertaion: .Add)
-    }
-    @IBAction func subtractPressed(_ sender: CalculatorButton) {
-        operation(opertaion: .Subtract)
-    }
-    @IBAction func multiplyPressed(_ sender: CalculatorButton) {
-        operation(opertaion: .Multiply)
-    }
-    @IBAction func dividePressed(_ sender: CalculatorButton) {
-        operation(opertaion: .Divide)
-    }
-    
-    @IBAction func showCalculatorPressed(_ sender: Any) {
-        if isCalculatorHide {
-            showCalculatorButton.setTitle("▽", for: .normal)
-            calculatorHeight.constant = self.view.bounds.height / 2
-            isCalculatorHide = false
-            calculatorView.isHidden = false
-        } else {
-            showCalculatorButton.setTitle("△", for: .normal)
-            calculatorHeight.constant = 0
-            isCalculatorHide = true
-            calculatorView.isHidden = true
-        }
-    }
     
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        initCalculator()
         
         //Add Observer
         BFCoinManager.shared.addObserver(self)
         initCells()
-    }
-    
-    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
-        if !isCalculatorHide {
-            calculatorHeight.constant = self.view.bounds.height / 2
-        }
     }
     
     // MARK: Internal Methods
@@ -130,45 +51,6 @@ class MainViewController: UIViewController {
         getTickersFromManager()
         for (index, ticker) in tickers.enumerated() {
             cells[index].ticker = ticker
-        }
-    }
-    
-    private func initCalculator() {
-        outputLabel.text = "0"
-        showCalculatorButton.setImage(UIImage(named:"calc_icon.png"), for: .normal)
-        calculatorView.isHidden = true
-        calculatorHeight.constant = 0
-    }
-    
-    private func operation(opertaion: Operation) {
-        if currentOperation != .NULL {
-            if currentValue != "" {
-                rightValue = currentValue
-                currentValue = ""
-                
-                if currentOperation == .Add {
-                    result = "\(Double(leftValue)! + Double(rightValue)!)"
-                } else if currentOperation == .Subtract {
-                    result = "\(Double(leftValue)! - Double(rightValue)!)"
-                } else if currentOperation == .Multiply {
-                    result = "\(Double(leftValue)! * Double(rightValue)!)"
-                } else if currentOperation == .Divide {
-                    result = "\(Double(leftValue)! / Double(rightValue)!)"
-                }
-                leftValue = result
-                if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
-                    result = "\(Int(Double(result)!))"
-                }
-                outputLabel.text = result
-            }
-            currentOperation = opertaion
-        } else {
-            if currentValue == "" {
-                currentValue = "0"
-            }
-            leftValue = currentValue
-            currentValue = ""
-            currentOperation = opertaion
         }
     }
     

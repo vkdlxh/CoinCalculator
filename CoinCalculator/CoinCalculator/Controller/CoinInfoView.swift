@@ -10,13 +10,16 @@ import UIKit
 
 class CoinInfoView: UIView {
     
+    let fontSize: CGFloat = 17
+    let fontName = ".SFUIText"
+    
     var ticker: Ticker? {
         didSet {
             guard let ticker = ticker else {
                 return
             }
-            let ltp = ticker.ltp == 0 ? "-" : "\(ticker.ltp)"
-            ltpLabel.text = ltp
+//            let ltp = ticker.ltp == 0 ? "-" : "\(ticker.ltp)"
+//            ltpLabel.text = ltp
             let bestBid = ticker.bestBid == 0 ? "-" : "\(ticker.bestBid)"
             bestBidLabel.text = bestBid
             let bestBidSize = ticker.bestBidSize == 0 ? "-" : "\(ticker.bestBidSize)"
@@ -28,6 +31,18 @@ class CoinInfoView: UIView {
             if let timestamp = ticker.timestamp {
                 timestampLabel.text = "\(timestamp)"
             }
+            
+            // FIXME: Test Animation
+            if oldValue?.ltp != ticker.ltp {
+                UIView.transition(with: ltpLabel, duration: 0.2, options: .transitionCrossDissolve, animations: {
+                    self.ltpLabel.font = UIFont(name: self.fontName, size: self.fontSize * 1.2)
+                }) { finished in
+                    let ltp = ticker.ltp == 0 ? "-" : "\(ticker.ltp)"
+                    self.ltpLabel.text = ltp
+                    self.ltpLabel.font = UIFont(name: self.fontName, size: self.fontSize)
+                }
+            }
+            
         }
     }
     
@@ -45,5 +60,6 @@ class CoinInfoView: UIView {
         // Drawing code
     }
     */
+    
 
 }
