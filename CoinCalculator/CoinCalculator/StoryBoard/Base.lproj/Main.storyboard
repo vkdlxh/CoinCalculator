@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbi-DU-puS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbi-DU-puS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Trl-VF-VAl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="283"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoinCell" rowHeight="105" id="Vvx-OM-gaG" customClass="CoinListCell" customModule="CoinCalculator" customModuleProvider="target">
@@ -49,7 +49,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-MO-ZQG" userLabel="View - bid">
-                                                    <rect key="frame" x="180" y="8" width="89.5" height="52.5"/>
+                                                    <rect key="frame" x="180" y="8" width="89.5" height="57.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bid価格" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b8O-6P-eYH">
                                                             <rect key="frame" x="0.0" y="0.0" width="89.5" height="18"/>
@@ -58,7 +58,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bid気配" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="MYl-Im-uiO">
-                                                            <rect key="frame" x="0.0" y="36.5" width="89.5" height="16"/>
+                                                            <rect key="frame" x="0.0" y="41.5" width="89.5" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -76,7 +76,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-mE-NoT" userLabel="View - ask">
-                                                    <rect key="frame" x="277.5" y="8" width="89.5" height="52.5"/>
+                                                    <rect key="frame" x="277.5" y="8" width="89.5" height="57.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ask価格" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-mQ-clc">
                                                             <rect key="frame" x="0.0" y="0.0" width="89.5" height="18"/>
@@ -85,7 +85,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ask気配" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="gLS-CI-4GM">
-                                                            <rect key="frame" x="0.0" y="36.5" width="89.5" height="16"/>
+                                                            <rect key="frame" x="0.0" y="41.5" width="89.5" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -102,9 +102,8 @@
                                                         <constraint firstAttribute="trailing" secondItem="gLS-CI-4GM" secondAttribute="trailing" id="ngK-6z-Kbp"/>
                                                     </constraints>
                                                 </view>
-
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5j-Eu-7ro" userLabel="View - bottom label">
-                                                    <rect key="frame" x="15" y="64.5" width="355" height="30"/>
+                                                    <rect key="frame" x="15" y="69.5" width="355" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新時刻" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssW-O1-5vZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="345" height="13.5"/>
@@ -189,407 +188,18 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="8J7-dj-SVW"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqC-f2-7ig" userLabel="View - calc top">
-                                <rect key="frame" x="0.0" y="347" width="375" height="40"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dF-o2-6UW" userLabel="View - line">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="Hfx-Rs-tQR"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-mB-d3C">
-                                        <rect key="frame" x="16" y="5" width="311" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrq-FO-4Kr" userLabel="View - line">
-                                        <rect key="frame" x="16" y="35" width="311" height="1"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1" id="ZqP-Rn-OI9"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q5-iR-clc">
-                                        <rect key="frame" x="343" y="8" width="24" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="a5d-Fr-3Y7"/>
-                                            <constraint firstAttribute="width" constant="24" id="fqO-iO-ab6"/>
-                                        </constraints>
-                                        <state key="normal" image="calc_icon.png"/>
-                                        <connections>
-                                            <action selector="showCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1o-kz-ZR0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="VnE-mB-d3C" secondAttribute="bottom" constant="5" id="6D3-w6-W7G"/>
-                                    <constraint firstItem="0dF-o2-6UW" firstAttribute="top" secondItem="JqC-f2-7ig" secondAttribute="top" id="7Lr-Vv-wPh"/>
-                                    <constraint firstAttribute="trailing" secondItem="0dF-o2-6UW" secondAttribute="trailing" id="8re-bE-x7S"/>
-                                    <constraint firstItem="VnE-mB-d3C" firstAttribute="leading" secondItem="JqC-f2-7ig" secondAttribute="leading" constant="16" id="Fko-Kl-wFb"/>
-                                    <constraint firstItem="vrq-FO-4Kr" firstAttribute="leading" secondItem="JqC-f2-7ig" secondAttribute="leading" constant="16" id="ZhX-UL-nZT"/>
-                                    <constraint firstItem="VnE-mB-d3C" firstAttribute="top" secondItem="JqC-f2-7ig" secondAttribute="top" constant="5" id="cJK-Zo-eor"/>
-                                    <constraint firstAttribute="trailing" secondItem="2Q5-iR-clc" secondAttribute="trailing" constant="8" id="cVn-k5-N0n"/>
-                                    <constraint firstAttribute="height" constant="40" id="cvZ-EW-X7W"/>
-                                    <constraint firstItem="0dF-o2-6UW" firstAttribute="leading" secondItem="JqC-f2-7ig" secondAttribute="leading" id="dGk-z8-wLi"/>
-                                    <constraint firstItem="vrq-FO-4Kr" firstAttribute="top" secondItem="VnE-mB-d3C" secondAttribute="bottom" id="hAA-XF-1Nh"/>
-                                    <constraint firstItem="2Q5-iR-clc" firstAttribute="leading" secondItem="VnE-mB-d3C" secondAttribute="trailing" constant="16" id="sBD-uu-6ML"/>
-                                    <constraint firstItem="2Q5-iR-clc" firstAttribute="centerY" secondItem="JqC-f2-7ig" secondAttribute="centerY" id="syM-Fi-5IO"/>
-                                    <constraint firstItem="vrq-FO-4Kr" firstAttribute="width" secondItem="VnE-mB-d3C" secondAttribute="width" id="zsR-IJ-lAR"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAa-p2-3Bm">
-                                <rect key="frame" x="0.0" y="387" width="375" height="280"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-uh-s86">
-                                        <rect key="frame" x="0.0" y="54" width="375" height="226"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E60-Et-9aW">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="45.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9P-Ps-1VN" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="281.5" height="45.5"/>
-                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="AC">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZYo-2Q-xxm"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpr-P5-RNv" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45.5"/>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="÷">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="dividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQW-fX-WM8"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKW-dW-wOg">
-                                                <rect key="frame" x="0.0" y="45.5" width="375" height="45"/>
-                                                <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkF-l6-EEh" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="7">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeN-bT-dJ6"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dey-gA-4AK" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="8">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1J-1t-CfE"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLC-wO-MgA" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="9">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbM-9d-t3S"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLf-bv-ziQ" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45"/>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="×">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="multiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFN-yb-3NM"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="kLC-wO-MgA" firstAttribute="width" secondItem="dLf-bv-ziQ" secondAttribute="width" id="6gY-lB-ZXV"/>
-                                                    <constraint firstItem="Dey-gA-4AK" firstAttribute="width" secondItem="kLC-wO-MgA" secondAttribute="width" id="Rlz-lb-qFz"/>
-                                                    <constraint firstItem="TkF-l6-EEh" firstAttribute="width" secondItem="Dey-gA-4AK" secondAttribute="width" id="T9o-H6-K0g"/>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-u4-bR9">
-                                                <rect key="frame" x="0.0" y="90.5" width="375" height="45"/>
-                                                <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB3-R9-ngz" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="4">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AbX-gO-Zvz"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQy-Mg-5F0" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="5">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jk2-sl-jVe"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxX-wT-fqM" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="6">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XVU-qa-n3s"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tn-ul-CuC" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45"/>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="-">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="subtractPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vs4-qD-L53"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="GB3-R9-ngz" firstAttribute="width" secondItem="AQy-Mg-5F0" secondAttribute="width" id="Hmq-5B-ujH"/>
-                                                    <constraint firstItem="AQy-Mg-5F0" firstAttribute="width" secondItem="vxX-wT-fqM" secondAttribute="width" id="JKL-AZ-OmQ"/>
-                                                    <constraint firstItem="vxX-wT-fqM" firstAttribute="width" secondItem="7Tn-ul-CuC" secondAttribute="width" id="laN-k4-646"/>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyM-sG-YcA">
-                                                <rect key="frame" x="0.0" y="135.5" width="375" height="45"/>
-                                                <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGM-FQ-fyy" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="1">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vPq-LC-zvZ"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP0-UC-ctk" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="94" y="0.0" width="93.5" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="2">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jwh-CH-TC8"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUi-aw-Sew" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="187.5" y="0.0" width="94" height="45"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="3">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbp-lZ-7LE"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEF-bK-x6G" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45"/>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="+">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="addPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mN4-ya-Ike"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="sP0-UC-ctk" firstAttribute="width" secondItem="oUi-aw-Sew" secondAttribute="width" id="1u7-eG-TbT"/>
-                                                    <constraint firstItem="oUi-aw-Sew" firstAttribute="width" secondItem="xEF-bK-x6G" secondAttribute="width" id="6dS-XV-QU8"/>
-                                                    <constraint firstItem="MGM-FQ-fyy" firstAttribute="width" secondItem="sP0-UC-ctk" secondAttribute="width" id="j4G-5n-NAk"/>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2c-LL-bmG">
-                                                <rect key="frame" x="0.0" y="180.5" width="375" height="45.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haB-iT-138" userLabel="지난해" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="45.5"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="0">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Osv-AR-TiA"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="899-bW-64N" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="188" y="0.0" width="93.5" height="45.5"/>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title=".">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="dotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qeg-a8-zVo"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iln-os-t4p" customClass="CalculatorButton" customModule="CoinCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="45.5"/>
-                                                        <color key="backgroundColor" red="0.98823529409999999" green="0.68235294120000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="=">
-                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="buttonBorder" value="YES"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQi-ER-0K9"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="899-bW-64N" firstAttribute="width" secondItem="iln-os-t4p" secondAttribute="width" id="Z5Y-dl-a2B"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="sP0-UC-ctk" firstAttribute="width" secondItem="899-bW-64N" secondAttribute="width" id="3yF-pS-AN2"/>
-                                            <constraint firstItem="q2c-LL-bmG" firstAttribute="height" secondItem="wyM-sG-YcA" secondAttribute="height" id="9IH-cD-hGt"/>
-                                            <constraint firstItem="jpr-P5-RNv" firstAttribute="width" secondItem="dLf-bv-ziQ" secondAttribute="width" id="jKf-k7-Rar"/>
-                                            <constraint firstItem="Bfl-u4-bR9" firstAttribute="height" secondItem="gKW-dW-wOg" secondAttribute="height" id="kP7-e0-rWX"/>
-                                            <constraint firstItem="wyM-sG-YcA" firstAttribute="height" secondItem="Bfl-u4-bR9" secondAttribute="height" id="qNh-RN-Yk4"/>
-                                            <constraint firstItem="gKW-dW-wOg" firstAttribute="height" secondItem="E60-Et-9aW" secondAttribute="height" id="yn7-2L-HTx"/>
-                                        </constraints>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfZ-3W-gM8">
-                                        <rect key="frame" x="32" y="10" width="311" height="34"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="UVO-8c-Yhu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="7c4-TF-rNA"/>
-                                    <constraint firstItem="MfZ-3W-gM8" firstAttribute="top" secondItem="EAa-p2-3Bm" secondAttribute="top" constant="10" id="9tJ-01-nsn"/>
-                                    <constraint firstItem="FWv-uh-s86" firstAttribute="leading" secondItem="EAa-p2-3Bm" secondAttribute="leading" id="JGE-Lq-HkP"/>
-                                    <constraint firstAttribute="trailing" secondItem="FWv-uh-s86" secondAttribute="trailing" id="c96-IA-3gP"/>
-                                    <constraint firstItem="FWv-uh-s86" firstAttribute="top" secondItem="MfZ-3W-gM8" secondAttribute="bottom" constant="10" id="d33-fZ-f2w"/>
-                                    <constraint firstAttribute="trailing" secondItem="MfZ-3W-gM8" secondAttribute="trailing" constant="32" id="gpn-YH-LOd"/>
-                                    <constraint firstItem="MfZ-3W-gM8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="EAa-p2-3Bm" secondAttribute="leading" constant="32" id="k5o-YN-Wwy"/>
-                                    <constraint firstAttribute="bottom" secondItem="FWv-uh-s86" secondAttribute="bottom" id="mUN-xW-eKV"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JqC-f2-7ig" secondAttribute="trailing" id="4PE-XW-qx9"/>
                             <constraint firstItem="Trl-VF-VAl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bqc-1B-Y8r"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EAa-p2-3Bm" secondAttribute="trailing" id="hho-y0-7Eq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EAa-p2-3Bm" secondAttribute="bottom" id="lDM-oU-LYG"/>
-                            <constraint firstItem="EAa-p2-3Bm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s1h-8T-tJG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Trl-VF-VAl" secondAttribute="bottom" id="ofe-ii-Wer"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Trl-VF-VAl" secondAttribute="trailing" id="ssv-7R-bOQ"/>
-                            <constraint firstItem="JqC-f2-7ig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tx0-vJ-Av1"/>
-                            <constraint firstItem="JqC-f2-7ig" firstAttribute="top" secondItem="Trl-VF-VAl" secondAttribute="bottom" id="wOg-tZ-Z1S"/>
-                            <constraint firstItem="EAa-p2-3Bm" firstAttribute="top" secondItem="JqC-f2-7ig" secondAttribute="bottom" id="xxU-IE-v8B"/>
                             <constraint firstItem="Trl-VF-VAl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z3K-go-9cL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="レート" id="Jt0-D9-SCb"/>
                     <connections>
-                        <outlet property="calculatorHeight" destination="7c4-TF-rNA" id="pf7-0B-BM8"/>
-                        <outlet property="calculatorView" destination="EAa-p2-3Bm" id="Hxp-Dj-vSI"/>
-                        <outlet property="outputLabel" destination="MfZ-3W-gM8" id="7Ji-HK-gtm"/>
-                        <outlet property="showCalculatorButton" destination="2Q5-iR-clc" id="p3X-83-rdP"/>
                         <outlet property="tableView" destination="Trl-VF-VAl" id="ifE-Cp-kEl"/>
                         <segue destination="Lio-cH-TMq" kind="show" identifier="CoinInfoSegue" id="Icd-EM-cl6"/>
                     </connections>
@@ -617,16 +227,13 @@
                                 </segments>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mt-np-6iF">
-                                <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                <rect key="frame" x="0.0" y="334" width="375" height="293"/>
                                 <connections>
                                     <segue destination="fk1-9z-CCH" kind="embed" identifier="chartSegue" id="xNx-kv-vWe"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COc-Hx-gWr">
-                                <rect key="frame" x="0.0" y="334" width="375" height="333"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="333" id="3CU-d0-7EX"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="334" width="375" height="293"/>
                                 <connections>
                                     <segue destination="t0z-2V-OMQ" kind="embed" identifier="marketSegue" id="crG-jK-Hgh"/>
                                 </connections>
@@ -713,13 +320,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b0-dH-K1k">
-                                        <rect key="frame" x="115" y="148" width="250" height="54"/>
+                                        <rect key="frame" x="94.5" y="148" width="270.5" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更新時刻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53G-aL-9c5">
-                                        <rect key="frame" x="15" y="153" width="90" height="44"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="更新時刻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53G-aL-9c5">
+                                        <rect key="frame" x="15" y="153" width="69.5" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -731,15 +338,14 @@
                                     <constraint firstItem="fXi-Hs-zGx" firstAttribute="bottom" secondItem="UpM-46-48x" secondAttribute="bottom" id="6TH-V5-AwA"/>
                                     <constraint firstAttribute="height" constant="198.5" id="AwH-52-HTF"/>
                                     <constraint firstItem="53G-aL-9c5" firstAttribute="leading" secondItem="LN9-it-wFl" secondAttribute="leading" constant="15" id="Cb3-mk-avU"/>
+                                    <constraint firstItem="6b0-dH-K1k" firstAttribute="leading" secondItem="53G-aL-9c5" secondAttribute="trailing" constant="10" id="DA3-aj-jIW"/>
                                     <constraint firstItem="luV-kc-YZ7" firstAttribute="top" secondItem="7x9-nJ-oqP" secondAttribute="bottom" constant="1" id="JUt-ut-GGj"/>
                                     <constraint firstAttribute="bottom" secondItem="fXi-Hs-zGx" secondAttribute="bottom" constant="60.5" id="TX4-yT-PLo"/>
                                     <constraint firstItem="6b0-dH-K1k" firstAttribute="top" secondItem="fXi-Hs-zGx" secondAttribute="bottom" constant="10" id="e6f-Ek-FD5"/>
                                     <constraint firstItem="7x9-nJ-oqP" firstAttribute="top" secondItem="LN9-it-wFl" secondAttribute="top" constant="10" id="eBk-MV-tWv"/>
                                     <constraint firstItem="UpM-46-48x" firstAttribute="height" relation="lessThanOrEqual" secondItem="fXi-Hs-zGx" secondAttribute="height" id="eNs-gB-cT0"/>
-                                    <constraint firstItem="53G-aL-9c5" firstAttribute="centerX" secondItem="LN9-it-wFl" secondAttribute="centerX" constant="-127.5" id="j2i-xg-KFW"/>
                                     <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fXi-Hs-zGx" secondAttribute="trailing" constant="10" id="kDF-o9-92T"/>
                                     <constraint firstAttribute="bottom" secondItem="53G-aL-9c5" secondAttribute="bottom" constant="1.5" id="mmg-8p-o5d"/>
-                                    <constraint firstItem="6b0-dH-K1k" firstAttribute="leading" relation="lessThanOrEqual" secondItem="53G-aL-9c5" secondAttribute="trailing" constant="10" id="njq-1e-A8a"/>
                                     <constraint firstAttribute="trailing" secondItem="6b0-dH-K1k" secondAttribute="trailing" constant="10" id="oum-Ta-n0c"/>
                                     <constraint firstAttribute="bottom" secondItem="6b0-dH-K1k" secondAttribute="bottom" constant="-3.5" id="p2x-27-pbL"/>
                                     <constraint firstItem="53G-aL-9c5" firstAttribute="top" secondItem="UpM-46-48x" secondAttribute="bottom" constant="15" id="qmx-Ye-dG2"/>
@@ -758,19 +364,114 @@
                                     <outlet property="timestampLabel" destination="6b0-dH-K1k" id="56x-nz-mPR"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haY-Mf-cc4" userLabel="Calculator Bar View" customClass="CalculatorBarView" customModule="CoinCalculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCl-Cm-OSK" userLabel="View - line">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="PbA-Tc-vMm"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJA-jv-tO6">
+                                        <rect key="frame" x="335" y="12.5" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="G7F-S9-wi5"/>
+                                            <constraint firstAttribute="height" constant="35" id="sgX-gH-Hi6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="calc_icon.png"/>
+                                        <connections>
+                                            <action selector="exchangeAction:" destination="haY-Mf-cc4" eventType="touchUpInside" id="ydK-Vx-Yav"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y77-Ia-WKf">
+                                        <rect key="frame" x="10" y="28" width="139.5" height="27"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px7-fH-uvh">
+                                        <rect key="frame" x="164.5" y="29" width="11" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="11" id="USR-zI-BzE"/>
+                                            <constraint firstAttribute="height" constant="21" id="fQg-i2-QOc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0S-aT-1vZ">
+                                        <rect key="frame" x="190.5" y="28" width="139.5" height="27"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XU6-u6-MCO">
+                                        <rect key="frame" x="35" y="4" width="42" height="21"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKj-l8-w1X">
+                                        <rect key="frame" x="10" y="4" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="JrH-cy-0v7"/>
+                                            <constraint firstAttribute="width" constant="20" id="SAx-LN-qsO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="switch_arrow.png"/>
+                                        <connections>
+                                            <action selector="switchExchangeAction:" destination="haY-Mf-cc4" eventType="touchUpInside" id="Ck4-xC-BUp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96471244096755981" green="0.9646943211555481" blue="0.96470659971237183" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="y77-Ia-WKf" firstAttribute="height" secondItem="x0S-aT-1vZ" secondAttribute="height" id="0XR-Or-NZP"/>
+                                    <constraint firstItem="y77-Ia-WKf" firstAttribute="leading" secondItem="haY-Mf-cc4" secondAttribute="leading" constant="10" id="3ia-uF-4AU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Px7-fH-uvh" secondAttribute="bottom" constant="10" id="6An-Ah-d3W"/>
+                                    <constraint firstItem="AKj-l8-w1X" firstAttribute="top" secondItem="hCl-Cm-OSK" secondAttribute="bottom" constant="3" id="7AV-jf-O6x"/>
+                                    <constraint firstItem="Px7-fH-uvh" firstAttribute="leading" secondItem="y77-Ia-WKf" secondAttribute="trailing" constant="15" id="AYV-EM-o35"/>
+                                    <constraint firstItem="yJA-jv-tO6" firstAttribute="leading" secondItem="x0S-aT-1vZ" secondAttribute="trailing" constant="5" id="Ega-3y-WGP"/>
+                                    <constraint firstItem="yJA-jv-tO6" firstAttribute="centerY" secondItem="haY-Mf-cc4" secondAttribute="centerY" id="FbN-BU-5mb"/>
+                                    <constraint firstItem="x0S-aT-1vZ" firstAttribute="leading" secondItem="Px7-fH-uvh" secondAttribute="trailing" constant="15" id="MYE-fd-fsV"/>
+                                    <constraint firstAttribute="bottom" secondItem="y77-Ia-WKf" secondAttribute="bottom" constant="5" id="NAE-G8-fYR"/>
+                                    <constraint firstItem="hCl-Cm-OSK" firstAttribute="leading" secondItem="haY-Mf-cc4" secondAttribute="leading" id="OrT-9v-ciA"/>
+                                    <constraint firstItem="XU6-u6-MCO" firstAttribute="leading" secondItem="AKj-l8-w1X" secondAttribute="trailing" constant="5" id="OzD-yD-awd"/>
+                                    <constraint firstItem="y77-Ia-WKf" firstAttribute="width" secondItem="x0S-aT-1vZ" secondAttribute="width" id="Qhf-nP-wnE"/>
+                                    <constraint firstItem="hCl-Cm-OSK" firstAttribute="top" secondItem="haY-Mf-cc4" secondAttribute="top" id="YUg-o4-Htx"/>
+                                    <constraint firstAttribute="trailing" secondItem="yJA-jv-tO6" secondAttribute="trailing" constant="5" id="bpX-Qr-05L"/>
+                                    <constraint firstItem="XU6-u6-MCO" firstAttribute="top" secondItem="hCl-Cm-OSK" secondAttribute="bottom" constant="3" id="e9B-gw-fGu"/>
+                                    <constraint firstAttribute="height" constant="60" id="hSR-PC-AKa"/>
+                                    <constraint firstAttribute="trailing" secondItem="hCl-Cm-OSK" secondAttribute="trailing" id="nPk-58-IAJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="x0S-aT-1vZ" secondAttribute="bottom" constant="5" id="nfh-F3-NAX"/>
+                                    <constraint firstItem="AKj-l8-w1X" firstAttribute="leading" secondItem="haY-Mf-cc4" secondAttribute="leading" constant="10" id="tXb-YH-glg"/>
+                                    <constraint firstItem="y77-Ia-WKf" firstAttribute="top" secondItem="XU6-u6-MCO" secondAttribute="bottom" constant="3" id="wue-66-G6v"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="currentExchangeModeLabel" destination="XU6-u6-MCO" id="87j-gV-wqd"/>
+                                    <outlet property="exchangedResultLabel" destination="y77-Ia-WKf" id="xHo-zn-5yw"/>
+                                    <outlet property="inputValueTextField" destination="x0S-aT-1vZ" id="OSu-Vx-TGm"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xQA-p8-QuI" firstAttribute="bottom" secondItem="0mt-np-6iF" secondAttribute="bottom" id="1Kq-q5-sNs"/>
                             <constraint firstItem="EaW-gX-w23" firstAttribute="top" secondItem="LN9-it-wFl" secondAttribute="bottom" constant="23.5" id="AGg-6p-883"/>
                             <constraint firstItem="0mt-np-6iF" firstAttribute="leading" secondItem="xQA-p8-QuI" secondAttribute="leading" id="AOQ-iy-j3G"/>
                             <constraint firstItem="xQA-p8-QuI" firstAttribute="trailing" secondItem="0mt-np-6iF" secondAttribute="trailing" id="KUM-e7-8ph"/>
                             <constraint firstItem="COc-Hx-gWr" firstAttribute="top" secondItem="EaW-gX-w23" secondAttribute="bottom" constant="10" id="PTv-xh-Mrl"/>
-                            <constraint firstItem="xQA-p8-QuI" firstAttribute="bottom" secondItem="COc-Hx-gWr" secondAttribute="bottom" id="Tt3-gf-0gr"/>
-                            <constraint firstItem="0mt-np-6iF" firstAttribute="height" secondItem="COc-Hx-gWr" secondAttribute="height" id="ZNS-ed-ig0"/>
+                            <constraint firstItem="0mt-np-6iF" firstAttribute="top" secondItem="EaW-gX-w23" secondAttribute="bottom" constant="10" id="UNg-1s-umk"/>
                             <constraint firstItem="xQA-p8-QuI" firstAttribute="trailing" secondItem="COc-Hx-gWr" secondAttribute="trailing" id="aCC-wc-mOW"/>
                             <constraint firstItem="COc-Hx-gWr" firstAttribute="leading" secondItem="xQA-p8-QuI" secondAttribute="leading" id="alM-Yg-Or1"/>
+                            <constraint firstItem="xQA-p8-QuI" firstAttribute="bottom" secondItem="COc-Hx-gWr" secondAttribute="bottom" constant="40" id="eDf-1W-1N5"/>
+                            <constraint firstItem="haY-Mf-cc4" firstAttribute="trailing" secondItem="xQA-p8-QuI" secondAttribute="trailing" id="ezh-GF-leA"/>
                             <constraint firstItem="LN9-it-wFl" firstAttribute="top" secondItem="xQA-p8-QuI" secondAttribute="top" id="fXd-jI-ABR"/>
+                            <constraint firstItem="haY-Mf-cc4" firstAttribute="leading" secondItem="xQA-p8-QuI" secondAttribute="leading" id="fex-h4-qEs"/>
+                            <constraint firstItem="haY-Mf-cc4" firstAttribute="bottom" secondItem="xQA-p8-QuI" secondAttribute="bottom" id="mup-by-YUH"/>
+                            <constraint firstItem="xQA-p8-QuI" firstAttribute="bottom" secondItem="0mt-np-6iF" secondAttribute="bottom" constant="40" id="tuc-tx-GMO"/>
                             <constraint firstItem="LN9-it-wFl" firstAttribute="leading" secondItem="xQA-p8-QuI" secondAttribute="leading" id="yZX-Wy-xk0"/>
                             <constraint firstItem="xQA-p8-QuI" firstAttribute="trailing" secondItem="LN9-it-wFl" secondAttribute="trailing" id="ysU-YX-s6h"/>
                             <constraint firstItem="EaW-gX-w23" firstAttribute="centerX" secondItem="VyN-sg-U6Z" secondAttribute="centerX" id="zt8-kx-l49"/>
@@ -778,6 +479,8 @@
                         <viewLayoutGuide key="safeArea" id="xQA-p8-QuI"/>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="mup-by-YUH" id="ZLW-g0-G6b"/>
+                        <outlet property="calculatorBarView" destination="haY-Mf-cc4" id="IDs-v0-rd6"/>
                         <outlet property="chartView" destination="0mt-np-6iF" id="bqe-gZ-7fr"/>
                         <outlet property="coinInfoView" destination="LN9-it-wFl" id="E0p-1v-dbk"/>
                         <outlet property="marketView" destination="COc-Hx-gWr" id="817-ux-0wK"/>
@@ -811,11 +514,11 @@
             <objects>
                 <viewController id="t0z-2V-OMQ" customClass="MarketViewController" customModule="CoinCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQg-c6-E0N">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="293"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Wt-2D-ssI">
-                                <rect key="frame" x="0.0" y="20.5" width="375" height="312.5"/>
+                                <rect key="frame" x="0.0" y="20.5" width="375" height="272.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MarketPriceCell" id="cJ0-5C-pOX" customClass="MarketPriceCell" customModule="CoinCalculator" customModuleProvider="target">
@@ -883,7 +586,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="データがありません。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM9-Ui-uky">
-                                <rect key="frame" x="101" y="156" width="173.5" height="20.5"/>
+                                <rect key="frame" x="101" y="136.5" width="173.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -960,5 +663,6 @@
     <resources>
         <image name="calc_icon.png" width="256" height="256"/>
         <image name="no_image.png" width="191" height="191"/>
+        <image name="switch_arrow.png" width="512" height="512"/>
     </resources>
 </document>

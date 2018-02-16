@@ -13,6 +13,7 @@
 		40ADF62C202EE1C000C402A9 /* calc_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ADF62B202EE1C000C402A9 /* calc_icon.png */; };
 		94A62F8C0FE581EF2FDFB059 /* Pods_CoinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */; };
 		C02B6041B3FAA0F40E4DE736 /* Pods_CoinCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DAA792A1A61822044E1E59 /* Pods_CoinCalculatorUITests.framework */; };
+		DA214C2E2035600500BB18EC /* switch_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DA214C2D2035600400BB18EC /* switch_arrow.png */; };
 		DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */; };
 		DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F8A0202826F000C23412 /* CoinInforViewController.swift */; };
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
@@ -38,6 +39,7 @@
 		DAA5ABD62033246900FC1B2A /* PriceView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD22033246800FC1B2A /* PriceView.png */; };
 		DAA5ABD72033246900FC1B2A /* RateView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD32033246900FC1B2A /* RateView.png */; };
 		DAA5ABD82033246900FC1B2A /* ChartView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD42033246900FC1B2A /* ChartView.png */; };
+		DAA5ABDC2034234C00FC1B2A /* CalculatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */; };
 		DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55420285B1900CE289E /* MarketViewController.swift */; };
 		DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55620285B2D00CE289E /* ChartViewController.swift */; };
 		DAC6B55920286E4200CE289E /* MarketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55820286E4200CE289E /* MarketPriceCell.swift */; };
@@ -91,6 +93,7 @@
 		CAB527DDC234A594130FB113 /* Pods-CoinCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1B185AEC93EF09BF8470D7 /* Pods-CoinCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA214C2D2035600400BB18EC /* switch_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_arrow.png; sourceTree = "<group>"; };
 		DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		DA72F8A0202826F000C23412 /* CoinInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInforViewController.swift; sourceTree = "<group>"; };
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		DAA5ABD22033246800FC1B2A /* PriceView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PriceView.png; sourceTree = "<group>"; };
 		DAA5ABD32033246900FC1B2A /* RateView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RateView.png; sourceTree = "<group>"; };
 		DAA5ABD42033246900FC1B2A /* ChartView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChartView.png; sourceTree = "<group>"; };
+		DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBarView.swift; sourceTree = "<group>"; };
 		DAC6B55420285B1900CE289E /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		DAC6B55620285B2D00CE289E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		DAC6B55820286E4200CE289E /* MarketPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceCell.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DA214C2D2035600400BB18EC /* switch_arrow.png */,
 				DAA5ABD0203323E600FC1B2A /* ScreenShots */,
 				40ADF62B202EE1C000C402A9 /* calc_icon.png */,
 				40124FAB202ED9F3001423C9 /* no_image.png */,
@@ -297,8 +302,9 @@
 			children = (
 				DAC6B5B92029733D00CE289E /* Chart */,
 				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
-				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
 				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
+				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
+				DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */,
 				DAC6B5BC202C214500CE289E /* CoinInfoView.swift */,
 				DAC6B55420285B1900CE289E /* MarketViewController.swift */,
 				DAC6B55820286E4200CE289E /* MarketPriceCell.swift */,
@@ -486,6 +492,7 @@
 				DAA5ABD52033246900FC1B2A /* Calculator.png in Resources */,
 				DAA5ABD82033246900FC1B2A /* ChartView.png in Resources */,
 				DAA13C4420219D430061FCE0 /* Assets.xcassets in Resources */,
+				DA214C2E2035600500BB18EC /* switch_arrow.png in Resources */,
 				DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */,
 				DAC6B5C1202D4F4700CE289E /* splash.png in Resources */,
 				40124FAA202ED49B001423C9 /* splash_icon.png in Resources */,
@@ -703,6 +710,7 @@
 				DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */,
 				DAC6B5B220295FA400CE289E /* Health.swift in Sources */,
 				DAC6B5AF20295FA400CE289E /* AppDelegate+RealtimeAPI.swift in Sources */,
+				DAA5ABDC2034234C00FC1B2A /* CalculatorBarView.swift in Sources */,
 				DAC6B5AE20295FA400CE289E /* BFContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
