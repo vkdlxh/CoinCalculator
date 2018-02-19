@@ -16,9 +16,9 @@ class CoinListCell: UITableViewCell {
             if let ticker = ticker {
                 marketNameLabel.text = ticker.productCode?.convertCodeToName()
                 if let productCode = ticker.productCode {
-                    logoLabel.image = UIImage(named: productCode) ?? UIImage(named: "no_image.png")
+                    logoImageView.image = UIImage(named: productCode) ?? UIImage(named: "no_image.png")
                 }else {
-                    logoLabel.image = UIImage(named: "no_image.png")
+                    logoImageView.image = UIImage(named: "no_image.png")
                 }
                 let bestBid = ticker.bestBid == 0 ? "-" : "\(ticker.bestBid)"
                 bestBidLabel.text = bestBid
@@ -33,18 +33,30 @@ class CoinListCell: UITableViewCell {
                 }
                 volumLabel.text = "\(ticker.volume)"
                 
+                ltpLabel.text = "\(ticker.ltp)"
+                
+                if let oldLtpValue = oldValue?.ltp {
+                    if oldLtpValue < ticker.ltp {
+                        ltpArrowImageView.image = UIImage(named: "up.png")
+                    } else if oldLtpValue > ticker.ltp {
+                        ltpArrowImageView.image = UIImage(named: "down.png")
+                    }
+                }
+                
             }
         }
     }
 
     @IBOutlet weak var marketNameLabel: UILabel!
-    @IBOutlet weak var logoLabel: UIImageView!
+    @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var bestBidLabel: UILabel!
     @IBOutlet weak var bestBidSizeLabel: UILabel!
     @IBOutlet weak var bestAskLabel: UILabel!
     @IBOutlet weak var bestAskSizeLabel: UILabel!
     @IBOutlet weak var timestampLabel: UILabel!
     @IBOutlet weak var volumLabel: UILabel!
+    @IBOutlet weak var ltpLabel: UILabel!
+    @IBOutlet weak var ltpArrowImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
