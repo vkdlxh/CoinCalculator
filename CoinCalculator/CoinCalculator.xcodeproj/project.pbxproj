@@ -14,6 +14,8 @@
 		94A62F8C0FE581EF2FDFB059 /* Pods_CoinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */; };
 		C02B6041B3FAA0F40E4DE736 /* Pods_CoinCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46DAA792A1A61822044E1E59 /* Pods_CoinCalculatorUITests.framework */; };
 		DA214C2E2035600500BB18EC /* switch_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DA214C2D2035600400BB18EC /* switch_arrow.png */; };
+		DA214C33203A98AE00BB18EC /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = DA214C31203A98AE00BB18EC /* down.png */; };
+		DA214C34203A98AE00BB18EC /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = DA214C32203A98AE00BB18EC /* up.png */; };
 		DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */; };
 		DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F8A0202826F000C23412 /* CoinInforViewController.swift */; };
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
@@ -94,6 +96,8 @@
 		D7225EC982F088D8FDA03832 /* Pods_CoinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1B185AEC93EF09BF8470D7 /* Pods-CoinCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA214C2D2035600400BB18EC /* switch_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switch_arrow.png; sourceTree = "<group>"; };
+		DA214C31203A98AE00BB18EC /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		DA214C32203A98AE00BB18EC /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		DA72F8A0202826F000C23412 /* CoinInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInforViewController.swift; sourceTree = "<group>"; };
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
@@ -203,8 +207,10 @@
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				DA214C2D2035600400BB18EC /* switch_arrow.png */,
 				DAA5ABD0203323E600FC1B2A /* ScreenShots */,
+				DA214C31203A98AE00BB18EC /* down.png */,
+				DA214C32203A98AE00BB18EC /* up.png */,
+				DA214C2D2035600400BB18EC /* switch_arrow.png */,
 				40ADF62B202EE1C000C402A9 /* calc_icon.png */,
 				40124FAB202ED9F3001423C9 /* no_image.png */,
 				DAC6B5BE202D3D4800CE289E /* coin_calc_icon.png */,
@@ -485,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA214C34203A98AE00BB18EC /* up.png in Resources */,
 				DA9EF0312021ABC90068E900 /* zcash_logo.png in Resources */,
 				DAA5ABCF2032D6D100FC1B2A /* Settings.bundle in Resources */,
 				DAA5ABD62033246900FC1B2A /* PriceView.png in Resources */,
@@ -496,6 +503,7 @@
 				DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */,
 				DAC6B5C1202D4F4700CE289E /* splash.png in Resources */,
 				40124FAA202ED49B001423C9 /* splash_icon.png in Resources */,
+				DA214C33203A98AE00BB18EC /* down.png in Resources */,
 				DAC6B5BF202D3D4A00CE289E /* coin_calc_icon.png in Resources */,
 				DAA5ABD72033246900FC1B2A /* RateView.png in Resources */,
 				DA9EF0322021ABC90068E900 /* dash_logo.png in Resources */,
