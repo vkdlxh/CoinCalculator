@@ -29,7 +29,7 @@ class CoinInforViewController: UIViewController {
         updateTicker()
         registerKeyboardNotifications()
         
-//        addCalculatorBarTapGesture()
+        addCalculatorBarTapGesture()
         
         // child chart
 //        if let chartViewController = UIStoryboard(name: "Chart", bundle: nil).instantiateInitialViewController() as? ChartViewController {
@@ -45,9 +45,9 @@ class CoinInforViewController: UIViewController {
         deRegisterKeyboardNotifications()
     }
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//    }
     
     private func registerKeyboardNotifications() {
         let notificationCenter = NotificationCenter.default
@@ -65,6 +65,7 @@ class CoinInforViewController: UIViewController {
         let keyboardHeight =  (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         let isKeyboardShowing = notification.name == .UIKeyboardWillShow
+        calculatorBarView.isKeyboardShowingByTappingView = isKeyboardShowing
         bottomConstraint?.constant = isKeyboardShowing ? -keyboardHeight.height : 0
         
         UIView.animate(withDuration: 0, delay: 0, options: .curveEaseOut, animations: {
@@ -119,21 +120,21 @@ class CoinInforViewController: UIViewController {
         }
     }
     
-//    private func addCalculatorBarTapGesture() {
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
-//        calculatorBarView.isUserInteractionEnabled = true
-//        calculatorBarView.addGestureRecognizer(tap)
-//
-//    }
-//    @objc func handleTap(_ sender: UITapGestureRecognizer) {
-//        if !(calculatorBarView.isKeyboardShowingByTappingView) {
-//            calculatorBarView.jpyValueTextField.becomeFirstResponder()
-//            calculatorBarView.isKeyboardShowingByTappingView = true
-//        } else {
-//            calculatorBarView.jpyValueTextField.resignFirstResponder()
-//            calculatorBarView.isKeyboardShowingByTappingView = false
-//        }
-//    }
+    private func addCalculatorBarTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        calculatorBarView.isUserInteractionEnabled = true
+        calculatorBarView.addGestureRecognizer(tap)
+
+    }
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        if !(calculatorBarView.isKeyboardShowingByTappingView) {
+            calculatorBarView.inputValueTextField.becomeFirstResponder()
+            calculatorBarView.isKeyboardShowingByTappingView = true
+        } else {
+            calculatorBarView.inputValueTextField.resignFirstResponder()
+            calculatorBarView.isKeyboardShowingByTappingView = false
+        }
+    }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

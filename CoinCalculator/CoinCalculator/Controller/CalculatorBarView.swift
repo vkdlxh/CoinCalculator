@@ -14,6 +14,8 @@ class CalculatorBarView: UIView {
     var ltp: Int = 0
     var isExchangeOfYenForCoin = false
     
+    var isKeyboardShowingByTappingView = false
+    
     var ticker: Ticker? {
         didSet {
             if let ticker = ticker {
