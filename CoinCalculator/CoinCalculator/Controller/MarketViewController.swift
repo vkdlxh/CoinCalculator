@@ -66,7 +66,12 @@ class MarketViewController: UIViewController {
                     cell.bidRate = bidRate
                     bidRateCell.append(cell)
                 }
+                
             }
+        }
+        DispatchQueue.main.async {
+            let index = IndexPath(row: 0, section: 1)
+            self.tableView.scrollToRow(at: index,at: .middle, animated: false)
         }
     }
     
