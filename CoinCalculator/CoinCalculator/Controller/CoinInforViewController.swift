@@ -45,10 +45,6 @@ class CoinInforViewController: UIViewController {
         deRegisterKeyboardNotifications()
     }
 
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.view.endEditing(true)
-//    }
-    
     private func registerKeyboardNotifications() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(handelKeyboardNotification), name: .UIKeyboardWillShow, object: nil)
