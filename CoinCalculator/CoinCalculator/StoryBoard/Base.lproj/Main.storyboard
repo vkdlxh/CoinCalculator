@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Trl-VF-VAl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoinCell" rowHeight="105" id="Vvx-OM-gaG" customClass="CoinListCell" customModule="CoinCalculator" customModuleProvider="target">
@@ -207,11 +207,31 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="8J7-dj-SVW"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDm-7f-eyp" userLabel="CautionMessageView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリが表示する情報は参考用です。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cna-tH-sFd">
+                                        <rect key="frame" x="66.5" y="16.5" width="243" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="cna-tH-sFd" firstAttribute="centerX" secondItem="FDm-7f-eyp" secondAttribute="centerX" id="K09-n5-8Ej"/>
+                                    <constraint firstItem="cna-tH-sFd" firstAttribute="centerY" secondItem="FDm-7f-eyp" secondAttribute="centerY" id="Puy-aj-LcP"/>
+                                    <constraint firstAttribute="height" constant="50" id="eeP-aW-a9w"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="FDm-7f-eyp" firstAttribute="top" secondItem="Trl-VF-VAl" secondAttribute="bottom" id="7XR-Qa-lYn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FDm-7f-eyp" secondAttribute="trailing" id="ZtD-Ow-Pgc"/>
+                            <constraint firstItem="FDm-7f-eyp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a0R-EQ-RUA"/>
                             <constraint firstItem="Trl-VF-VAl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bqc-1B-Y8r"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Trl-VF-VAl" secondAttribute="bottom" id="ofe-ii-Wer"/>
+                            <constraint firstAttribute="bottom" secondItem="FDm-7f-eyp" secondAttribute="bottom" id="kn5-SH-KJ4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Trl-VF-VAl" secondAttribute="trailing" id="ssv-7R-bOQ"/>
                             <constraint firstItem="Trl-VF-VAl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z3K-go-9cL"/>
                         </constraints>
@@ -219,6 +239,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="レート" id="Jt0-D9-SCb"/>
                     <connections>
+                        <outlet property="cautionMessageLabel" destination="cna-tH-sFd" id="Bex-ej-p5q"/>
                         <outlet property="tableView" destination="Trl-VF-VAl" id="ifE-Cp-kEl"/>
                         <segue destination="Lio-cH-TMq" kind="show" identifier="CoinInfoSegue" id="Icd-EM-cl6"/>
                     </connections>
@@ -627,7 +648,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="データがありません。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM9-Ui-uky">
                                 <rect key="frame" x="101" y="163.5" width="173.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05E-xz-Xkw">
