@@ -15,7 +15,7 @@ class MarketPriceCell: UITableViewCell {
             if let askRate = askRate {
                 askSizeLabel.text = "\(askRate.size)"
                 priceLabel.text = "\(askRate.price)"
-                priceLabel.textColor = .green
+                priceLabel.textColor = CCColor().askColor
             }
         }
     }
@@ -23,8 +23,9 @@ class MarketPriceCell: UITableViewCell {
     var midPrice: Int? {
         didSet {
             if let midPrice = midPrice {
-                askSizeLabel.text = "Middle Price"
+                askSizeLabel.text = " "
                 priceLabel.text = "\(midPrice)"
+                priceLabel.font = UIFont.boldSystemFont(ofSize: 16)
             }
         }
     }
@@ -34,7 +35,7 @@ class MarketPriceCell: UITableViewCell {
             if let bidRate = bidRate {
                 bidSizeLabel.text = "\(bidRate.size)"
                 priceLabel.text = "\(bidRate.price)"
-                priceLabel.textColor = .red
+                priceLabel.textColor = CCColor().bidColor
             }
         }
     }

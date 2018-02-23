@@ -17,7 +17,8 @@
 		DA214C33203A98AE00BB18EC /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = DA214C31203A98AE00BB18EC /* down.png */; };
 		DA214C34203A98AE00BB18EC /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = DA214C32203A98AE00BB18EC /* up.png */; };
 		DA214C36203AA05900BB18EC /* ExchangeView.png in Resources */ = {isa = PBXBuildFile; fileRef = DA214C35203AA05900BB18EC /* ExchangeView.png */; };
-		DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */; };
+		DA6147C8203FDA90009DD918 /* CCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6147C7203FDA90009DD918 /* CCColor.swift */; };
+		DA6147CC203FDAEC009DD918 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6147CB203FDAEC009DD918 /* UIColor.swift */; };
 		DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA72F8A0202826F000C23412 /* CoinInforViewController.swift */; };
 		DA9EF02C2021ABC90068E900 /* monero_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0232021ABC80068E900 /* monero_logo.png */; };
 		DA9EF02D2021ABC90068E900 /* bitcoin_cash_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */; };
@@ -99,7 +100,8 @@
 		DA214C31203A98AE00BB18EC /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		DA214C32203A98AE00BB18EC /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		DA214C35203AA05900BB18EC /* ExchangeView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExchangeView.png; sourceTree = "<group>"; };
-		DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
+		DA6147C7203FDA90009DD918 /* CCColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCColor.swift; sourceTree = "<group>"; };
+		DA6147CB203FDAEC009DD918 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		DA72F8A0202826F000C23412 /* CoinInforViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInforViewController.swift; sourceTree = "<group>"; };
 		DA9EF0232021ABC80068E900 /* monero_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monero_logo.png; sourceTree = "<group>"; };
 		DA9EF0242021ABC80068E900 /* bitcoin_cash_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitcoin_cash_logo.png; sourceTree = "<group>"; };
@@ -204,6 +206,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA6147C9203FDABF009DD918 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				DA6147CB203FDAEC009DD918 /* UIColor.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,11 +264,12 @@
 		DAA13C3B20219D420061FCE0 /* CoinCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DA6147C7203FDA90009DD918 /* CCColor.swift */,
+				DA6147C9203FDABF009DD918 /* Extention */,
 				DAC6B59A20295FA400CE289E /* BFCoinManager */,
 				DAA13C6B20219E490061FCE0 /* StoryBoard */,
 				DAA13C6C20219E540061FCE0 /* Controller */,
 				DAA13C6A20219DC00061FCE0 /* Supporting Files */,
-				DA5FD5F22022E6A800C6C1EC /* CalculatorButton.swift */,
 				DAA13C4820219D430061FCE0 /* Info.plist */,
 			);
 			path = CoinCalculator;
@@ -308,8 +319,8 @@
 			children = (
 				DAC6B5B92029733D00CE289E /* Chart */,
 				DAA13C3E20219D430061FCE0 /* MainViewController.swift */,
-				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
 				DA9EF0362021B5740068E900 /* CoinListCell.swift */,
+				DA72F8A0202826F000C23412 /* CoinInforViewController.swift */,
 				DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */,
 				DAC6B5BC202C214500CE289E /* CoinInfoView.swift */,
 				DAC6B55420285B1900CE289E /* MarketViewController.swift */,
@@ -704,15 +715,16 @@
 				DAA13C3D20219D420061FCE0 /* AppDelegate.swift in Sources */,
 				DAC6B5B320295FA400CE289E /* Board.swift in Sources */,
 				DAC6B5B020295FA400CE289E /* ChartData.swift in Sources */,
+				DA6147CC203FDAEC009DD918 /* UIColor.swift in Sources */,
 				DAC6B5AD20295FA400CE289E /* BFCoinAPI.swift in Sources */,
 				DAC6B5B520295FA400CE289E /* Ticker.swift in Sources */,
+				DA6147C8203FDA90009DD918 /* CCColor.swift in Sources */,
 				DAC6B5B620295FA400CE289E /* BoardState.swift in Sources */,
 				DAC6B5B120295FA400CE289E /* Execution.swift in Sources */,
 				DAC6B5AC20295FA400CE289E /* BFCoinRealtimeAPI.swift in Sources */,
 				DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */,
 				DAC6B5AB20295FA400CE289E /* Date+Helper.swift in Sources */,
 				DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */,
-				DA5FD5F32022E6A800C6C1EC /* CalculatorButton.swift in Sources */,
 				DAC6B5B820295FA400CE289E /* BFCoinManager.swift in Sources */,
 				DAC6B5B420295FA400CE289E /* Chat.swift in Sources */,
 				DA72F8A1202826F000C23412 /* CoinInforViewController.swift in Sources */,

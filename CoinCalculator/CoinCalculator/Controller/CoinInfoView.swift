@@ -18,8 +18,6 @@ class CoinInfoView: UIView {
             guard let ticker = ticker else {
                 return
             }
-//            let ltp = ticker.ltp == 0 ? "-" : "\(ticker.ltp)"
-//            ltpLabel.text = ltp
             let bestBid = ticker.bestBid == 0 ? "-" : "\(ticker.bestBid)"
             bestBidLabel.text = bestBid
             let bestBidSize = ticker.bestBidSize == 0 ? "-" : "\(ticker.bestBidSize)"
