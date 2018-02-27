@@ -41,6 +41,8 @@ class CoinListCell: UITableViewCell {
                     } else if oldLtpValue > ticker.ltp {
                         ltpArrowImageView.image = UIImage(named: "down.png")
                     }
+                } else {
+                    ltpArrowImageView.image = UIImage(named: "horizontal_line")
                 }
                 
             }

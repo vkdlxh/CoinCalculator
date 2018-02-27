@@ -43,6 +43,7 @@
 		DAA5ABD72033246900FC1B2A /* RateView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD32033246900FC1B2A /* RateView.png */; };
 		DAA5ABD82033246900FC1B2A /* ChartView.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA5ABD42033246900FC1B2A /* ChartView.png */; };
 		DAA5ABDC2034234C00FC1B2A /* CalculatorBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */; };
+		DAB2342A204557390017A704 /* horizontal_line.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB23429204557390017A704 /* horizontal_line.png */; };
 		DAC6B55520285B1900CE289E /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55420285B1900CE289E /* MarketViewController.swift */; };
 		DAC6B55720285B2D00CE289E /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55620285B2D00CE289E /* ChartViewController.swift */; };
 		DAC6B55920286E4200CE289E /* MarketPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6B55820286E4200CE289E /* MarketPriceCell.swift */; };
@@ -132,6 +133,7 @@
 		DAA5ABD32033246900FC1B2A /* RateView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RateView.png; sourceTree = "<group>"; };
 		DAA5ABD42033246900FC1B2A /* ChartView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChartView.png; sourceTree = "<group>"; };
 		DAA5ABDB2034234C00FC1B2A /* CalculatorBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBarView.swift; sourceTree = "<group>"; };
+		DAB23429204557390017A704 /* horizontal_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontal_line.png; sourceTree = "<group>"; };
 		DAC6B55420285B1900CE289E /* MarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		DAC6B55620285B2D00CE289E /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		DAC6B55820286E4200CE289E /* MarketPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceCell.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				DAB23429204557390017A704 /* horizontal_line.png */,
 				DAA5ABD0203323E600FC1B2A /* ScreenShots */,
 				DA214C31203A98AE00BB18EC /* down.png */,
 				DA214C32203A98AE00BB18EC /* up.png */,
@@ -502,6 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB2342A204557390017A704 /* horizontal_line.png in Resources */,
 				DA214C34203A98AE00BB18EC /* up.png in Resources */,
 				DA9EF0312021ABC90068E900 /* zcash_logo.png in Resources */,
 				DAA5ABCF2032D6D100FC1B2A /* Settings.bundle in Resources */,
