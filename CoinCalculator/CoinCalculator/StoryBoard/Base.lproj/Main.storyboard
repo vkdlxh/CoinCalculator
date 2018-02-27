@@ -209,18 +209,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDm-7f-eyp" userLabel="CautionMessageView">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリが表示する情報は参考用です。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cna-tH-sFd">
-                                        <rect key="frame" x="66.5" y="16.5" width="243" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリの情報の正確性、継続性や機能等を何ら保証するものではなく、これらの欠陥、瑕疵等について、これらを使用したこと、又は使用できなかったことから生じる一切の損害に関して、いかなる責任も負いません。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cna-tH-sFd">
+                                        <rect key="frame" x="8" y="7.5" width="359" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="cna-tH-sFd" firstAttribute="leading" secondItem="FDm-7f-eyp" secondAttribute="leading" constant="8" id="FOA-UZ-89C"/>
                                     <constraint firstItem="cna-tH-sFd" firstAttribute="centerX" secondItem="FDm-7f-eyp" secondAttribute="centerX" id="K09-n5-8Ej"/>
                                     <constraint firstItem="cna-tH-sFd" firstAttribute="centerY" secondItem="FDm-7f-eyp" secondAttribute="centerY" id="Puy-aj-LcP"/>
                                     <constraint firstAttribute="height" constant="50" id="eeP-aW-a9w"/>
+                                    <constraint firstAttribute="trailing" secondItem="cna-tH-sFd" secondAttribute="trailing" constant="8" id="yqQ-ad-WId"/>
                                 </constraints>
                             </view>
                         </subviews>

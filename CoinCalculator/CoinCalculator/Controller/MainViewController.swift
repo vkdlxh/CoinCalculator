@@ -16,9 +16,6 @@ class MainViewController: UIViewController {
     var tickers: [Ticker] = []
     var cells: [CoinListCell] = []
     
-    let cautionMessage = "アプリが表示する情報は参考用です。"
-    var mutableString = NSMutableAttributedString()
-    
     // MARK: IBOutlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var cautionMessageLabel: UILabel!
@@ -30,11 +27,6 @@ class MainViewController: UIViewController {
         //Add Observer
         BFCoinManager.shared.addObserver(self)
         initCells()
-        
-        mutableString = NSMutableAttributedString(string: cautionMessage)
-        mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.darkGray, range: NSRange(location:0,length:cautionMessage.count))
-        mutableString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.red, range: NSRange(location:11,length:3))
-        cautionMessageLabel.attributedText = mutableString
     }
     
     // MARK: Internal Methods
