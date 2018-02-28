@@ -219,8 +219,8 @@
 		DA9EF0222021ABA80068E900 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				DAB23429204557390017A704 /* horizontal_line.png */,
 				DAA5ABD0203323E600FC1B2A /* ScreenShots */,
+				DAB23429204557390017A704 /* horizontal_line.png */,
 				DA214C31203A98AE00BB18EC /* down.png */,
 				DA214C32203A98AE00BB18EC /* up.png */,
 				DA214C2D2035600400BB18EC /* switch_arrow.png */,
